@@ -1,6 +1,8 @@
 Python Client for Stackdriver Monitoring Dashboards API (`Beta`_)
 ==================================================================
 
+|beta| |pypi| |versions| 
+
 `Stackdriver Monitoring Dashboards API`_: Manages dashboard configurations used in the Stackdriver UI.
 
 - `Client Library Documentation`_
@@ -10,6 +12,13 @@ Python Client for Stackdriver Monitoring Dashboards API (`Beta`_)
 .. _Stackdriver Monitoring Dashboards API: https://cloud.google.com/monitoring/dashboards/
 .. _Client Library Documentation: https://googleapis.dev/python/monitoring-dashboards/latest
 .. _Product Documentation:  https://cloud.google.com/monitoring/dashboards/
+
+.. |beta| image:: https://img.shields.io/badge/support-beta-gold.svg
+   :target: https://github.com/googleapis/google-cloud-python/blob/master/README.rst#beta
+.. |pypi| image:: https://img.shields.io/pypi/v/google-cloud-monitoring-dashboards.svg
+   :target: https://pypi.org/project/google-cloud-monitoring-dashboards/
+.. |versions| image:: https://img.shields.io/pypi/pyversions/google-cloud-monitoring-dashboards.svg
+   :target: https://pypi.org/project/google-cloud-monitoring-dashboards/
 
 Quick Start
 -----------
