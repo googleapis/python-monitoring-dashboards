@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# google-cloud-monitoring-dashboards documentation build configuration file
+# google-monitoring-dashboard documentation build configuration file
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -65,8 +65,8 @@ source_suffix = [".rst", ".md"]
 master_doc = "index"
 
 # General information about the project.
-project = u"google-cloud-monitoring-dashboards"
-copyright = u"2019, Google"
+project = u"google-monitoring-dashboard"
+copyright = u"2017, Google"
 author = u"Google APIs"
 
 # The version info for the project you're documenting, acts as replacement for
@@ -133,9 +133,9 @@ html_theme = "alabaster"
 # further.  For a list of options available for each theme, see the
 # documentation.
 html_theme_options = {
-    "description": "Google Cloud Client Libraries for google-cloud-monitoring-dashboards",
+    "description": "Google Cloud Client Libraries for Python",
     "github_user": "googleapis",
-    "github_repo": "python-monitoring-dashboards",
+    "github_repo": "google-cloud-python",
     "github_banner": True,
     "font_family": "'Roboto', Georgia, sans",
     "head_font_family": "'Roboto', Georgia, serif",
@@ -227,7 +227,7 @@ html_static_path = ["_static"]
 # html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "google-cloud-monitoring-dashboards-doc"
+htmlhelp_basename = "google-monitoring-dashboard-doc"
 
 # -- Options for warnings ------------------------------------------------------
 
@@ -260,8 +260,8 @@ latex_elements = {
 latex_documents = [
     (
         master_doc,
-        "google-cloud-monitoring-dashboards.tex",
-        u"google-cloud-monitoring-dashboards Documentation",
+        "google-monitoring-dashboard.tex",
+        u"google-monitoring-dashboard Documentation",
         author,
         "manual",
     )
@@ -295,8 +295,8 @@ latex_documents = [
 man_pages = [
     (
         master_doc,
-        "google-cloud-monitoring-dashboards",
-        u"google-cloud-monitoring-dashboards Documentation",
+        "google-monitoring-dashboard",
+        u"google-monitoring-dashboard Documentation",
         [author],
         1,
     )
@@ -314,11 +314,11 @@ man_pages = [
 texinfo_documents = [
     (
         master_doc,
-        "google-cloud-monitoring-dashboards",
-        u"google-cloud-monitoring-dashboards Documentation",
+        "google-monitoring-dashboard",
+        u"google-monitoring-dashboard Documentation",
         author,
-        "google-cloud-monitoring-dashboards",
-        "google-cloud-monitoring-dashboards Library",
+        "google-monitoring-dashboard",
+        "GAPIC library for the {metadata.shortName} v1 service",
         "APIs",
     )
 ]
@@ -339,9 +339,14 @@ texinfo_documents = [
 # Example configuration for intersphinx: refer to the Python standard library.
 intersphinx_mapping = {
     "python": ("http://python.readthedocs.org/en/latest/", None),
+    "gax": ("https://gax-python.readthedocs.org/en/latest/", None),
     "google-auth": ("https://google-auth.readthedocs.io/en/stable", None),
-    "google.api_core": ("https://googleapis.dev/python/google-api-core/latest/", None),
+    "google-gax": ("https://gax-python.readthedocs.io/en/latest/", None),
+    "google.api_core": ("https://googleapis.dev/python/google-api-core/latest", None),
     "grpc": ("https://grpc.io/grpc/python/", None),
+    "requests": ("https://requests.kennethreitz.org/en/master/", None),
+    "fastavro": ("https://fastavro.readthedocs.io/en/stable/", None),
+    "pandas": ("https://pandas.pydata.org/pandas-docs/stable/", None),
 }
 
 

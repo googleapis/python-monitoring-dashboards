@@ -312,9 +312,9 @@ Scorecard = _reflection.GeneratedProtocolMessageType(
             {
                 "DESCRIPTOR": _SCORECARD_GAUGEVIEW,
                 "__module__": "google.cloud.monitoring.dashboard_v1.proto.scorecard_pb2",
-                "__doc__": """A gauge chart shows where the current value sits within a
-    pre-defined range. The upper and lower bounds should define the possible
-    range of values for the scorecard’s query (inclusive).
+                "__doc__": """A gauge chart shows where the current value sits within a pre-defined
+    range. The upper and lower bounds should define the possible range of
+    values for the scorecard’s query (inclusive).
     
     
     Attributes:
