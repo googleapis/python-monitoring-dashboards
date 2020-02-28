@@ -757,8 +757,8 @@ TimeSeriesFilterRatio = _reflection.GeneratedProtocolMessageType(
             {
                 "DESCRIPTOR": _TIMESERIESFILTERRATIO_RATIOPART,
                 "__module__": "google.cloud.monitoring.dashboard_v1.proto.metrics_pb2",
-                "__doc__": """Describes a query to build the numerator or denominator of
-    a TimeSeriesFilterRatio.
+                "__doc__": """Describes a query to build the numerator or denominator of a
+    TimeSeriesFilterRatio.
     
     
     Attributes:
