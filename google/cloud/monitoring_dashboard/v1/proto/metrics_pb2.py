@@ -776,9 +776,9 @@ TimeSeriesFilterRatio = _reflection.GeneratedProtocolMessageType(
         ),
         "DESCRIPTOR": _TIMESERIESFILTERRATIO,
         "__module__": "google.cloud.monitoring.dashboard_v1.proto.metrics_pb2",
-        "__doc__": """A pair of time series filters that define a ratio
-  computation. The output time series is the pair-wise division of each
-  aligned element from the numerator and denominator time series.
+        "__doc__": """A pair of time series filters that define a ratio computation. The
+  output time series is the pair-wise division of each aligned element
+  from the numerator and denominator time series.
   
   
   Attributes:
