@@ -452,7 +452,7 @@ class Aggregation(object):
 
           The implementation of any API method which has a FieldMask type field in
           the request should verify the included field paths, and return an
-          ``INVALID_ARGUMENT`` error if any path is duplicated or unmappable.
+          ``INVALID_ARGUMENT`` error if any path is unmappable.
           REDUCE_COUNT_FALSE (int): The approach to be used to align individual time series. Not all
           alignment functions may be applied to all time series, depending on the
           metric type and value type of the original time series. Alignment may
