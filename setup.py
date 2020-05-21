@@ -22,8 +22,8 @@ import setuptools
 
 name = "google-cloud-monitoring-dashboards"
 description = "Monitoring Dashboards API client library"
-version = "0.1.0"
-release_status = "Development Status :: 4 - Beta"
+version = "1.0.0"
+release_status = "Development Status :: 5 - Production/Stable"
 dependencies = [
     "google-api-core[grpc] >= 1.14.0, < 2.0.0dev",
     'enum34; python_version < "3.4"',
@@ -51,7 +51,7 @@ setuptools.setup(
     author="Google LLC",
     author_email="googleapis-packages@google.com",
     license="Apache 2.0",
-    url="https://github.com/googleapis/python-secret-manager",
+    url="https://github.com/googleapis/python-monitoring-dashboards",
     classifiers=[
         release_status,
         "Intended Audience :: Developers",
