@@ -32,6 +32,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.monitoring.dashboard.v1",
     syntax="proto3",
     serialized_options=b'\n"com.google.monitoring.dashboard.v1B\026ServiceMonitoringProtoP\001ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\352\002(Google::Cloud::Monitoring::Dashboard::V1',
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\n8google/cloud/monitoring_dashboard_v1/proto/service.proto\x12\x1egoogle.monitoring.dashboard.v1B\xb2\x01\n"com.google.monitoring.dashboard.v1B\x16ServiceMonitoringProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
 )
 

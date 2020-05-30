@@ -39,6 +39,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.monitoring.dashboard.v1",
     syntax="proto3",
     serialized_options=b'\n"com.google.monitoring.dashboard.v1B\014MetricsProtoP\001ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\352\002(Google::Cloud::Monitoring::Dashboard::V1',
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\n8google/cloud/monitoring_dashboard_v1/proto/metrics.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x1fgoogle/api/field_behavior.proto\x1a\x37google/cloud/monitoring_dashboard_v1/proto/common.proto"\xdd\x01\n\x0fTimeSeriesQuery\x12N\n\x12time_series_filter\x18\x01 \x01(\x0b\x32\x30.google.monitoring.dashboard.v1.TimeSeriesFilterH\x00\x12Y\n\x18time_series_filter_ratio\x18\x02 \x01(\x0b\x32\x35.google.monitoring.dashboard.v1.TimeSeriesFilterRatioH\x00\x12\x15\n\runit_override\x18\x05 \x01(\tB\x08\n\x06source"\xba\x02\n\x10TimeSeriesFilter\x12\x13\n\x06\x66ilter\x18\x01 \x01(\tB\x03\xe0\x41\x02\x12@\n\x0b\x61ggregation\x18\x02 \x01(\x0b\x32+.google.monitoring.dashboard.v1.Aggregation\x12W\n\x17pick_time_series_filter\x18\x04 \x01(\x0b\x32\x34.google.monitoring.dashboard.v1.PickTimeSeriesFilterH\x00\x12\x65\n\x1estatistical_time_series_filter\x18\x05 \x01(\x0b\x32;.google.monitoring.dashboard.v1.StatisticalTimeSeriesFilterH\x00\x42\x0f\n\routput_filter"\xc2\x04\n\x15TimeSeriesFilterRatio\x12R\n\tnumerator\x18\x01 \x01(\x0b\x32?.google.monitoring.dashboard.v1.TimeSeriesFilterRatio.RatioPart\x12T\n\x0b\x64\x65nominator\x18\x02 \x01(\x0b\x32?.google.monitoring.dashboard.v1.TimeSeriesFilterRatio.RatioPart\x12J\n\x15secondary_aggregation\x18\x03 \x01(\x0b\x32+.google.monitoring.dashboard.v1.Aggregation\x12W\n\x17pick_time_series_filter\x18\x04 \x01(\x0b\x32\x34.google.monitoring.dashboard.v1.PickTimeSeriesFilterH\x00\x12\x65\n\x1estatistical_time_series_filter\x18\x05 \x01(\x0b\x32;.google.monitoring.dashboard.v1.StatisticalTimeSeriesFilterH\x00\x1a\x62\n\tRatioPart\x12\x13\n\x06\x66ilter\x18\x01 \x01(\tB\x03\xe0\x41\x02\x12@\n\x0b\x61ggregation\x18\x02 \x01(\x0b\x32+.google.monitoring.dashboard.v1.AggregationB\x0f\n\routput_filter"\xa4\x02\n\tThreshold\x12\r\n\x05label\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x01\x12>\n\x05\x63olor\x18\x03 \x01(\x0e\x32/.google.monitoring.dashboard.v1.Threshold.Color\x12\x46\n\tdirection\x18\x04 \x01(\x0e\x32\x33.google.monitoring.dashboard.v1.Threshold.Direction"3\n\x05\x43olor\x12\x15\n\x11\x43OLOR_UNSPECIFIED\x10\x00\x12\n\n\x06YELLOW\x10\x04\x12\x07\n\x03RED\x10\x06"<\n\tDirection\x12\x19\n\x15\x44IRECTION_UNSPECIFIED\x10\x00\x12\t\n\x05\x41\x42OVE\x10\x01\x12\t\n\x05\x42\x45LOW\x10\x02*Q\n\x0eSparkChartType\x12 \n\x1cSPARK_CHART_TYPE_UNSPECIFIED\x10\x00\x12\x0e\n\nSPARK_LINE\x10\x01\x12\r\n\tSPARK_BAR\x10\x02\x42\xa8\x01\n"com.google.monitoring.dashboard.v1B\x0cMetricsProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
     dependencies=[
         google_dot_api_dot_field__behavior__pb2.DESCRIPTOR,
@@ -51,6 +52,7 @@ _SPARKCHARTTYPE = _descriptor.EnumDescriptor(
     full_name="google.monitoring.dashboard.v1.SparkChartType",
     filename=None,
     file=DESCRIPTOR,
+    create_key=_descriptor._internal_create_key,
     values=[
         _descriptor.EnumValueDescriptor(
             name="SPARK_CHART_TYPE_UNSPECIFIED",
@@ -58,12 +60,23 @@ _SPARKCHARTTYPE = _descriptor.EnumDescriptor(
             number=0,
             serialized_options=None,
             type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="SPARK_LINE", index=1, number=1, serialized_options=None, type=None
+            name="SPARK_LINE",
+            index=1,
+            number=1,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="SPARK_BAR", index=2, number=2, serialized_options=None, type=None
+            name="SPARK_BAR",
+            index=2,
+            number=2,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     containing_type=None,
@@ -84,6 +97,7 @@ _THRESHOLD_COLOR = _descriptor.EnumDescriptor(
     full_name="google.monitoring.dashboard.v1.Threshold.Color",
     filename=None,
     file=DESCRIPTOR,
+    create_key=_descriptor._internal_create_key,
     values=[
         _descriptor.EnumValueDescriptor(
             name="COLOR_UNSPECIFIED",
@@ -91,12 +105,23 @@ _THRESHOLD_COLOR = _descriptor.EnumDescriptor(
             number=0,
             serialized_options=None,
             type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="YELLOW", index=1, number=4, serialized_options=None, type=None
+            name="YELLOW",
+            index=1,
+            number=4,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="RED", index=2, number=6, serialized_options=None, type=None
+            name="RED",
+            index=2,
+            number=6,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     containing_type=None,
@@ -111,6 +136,7 @@ _THRESHOLD_DIRECTION = _descriptor.EnumDescriptor(
     full_name="google.monitoring.dashboard.v1.Threshold.Direction",
     filename=None,
     file=DESCRIPTOR,
+    create_key=_descriptor._internal_create_key,
     values=[
         _descriptor.EnumValueDescriptor(
             name="DIRECTION_UNSPECIFIED",
@@ -118,12 +144,23 @@ _THRESHOLD_DIRECTION = _descriptor.EnumDescriptor(
             number=0,
             serialized_options=None,
             type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="ABOVE", index=1, number=1, serialized_options=None, type=None
+            name="ABOVE",
+            index=1,
+            number=1,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="BELOW", index=2, number=2, serialized_options=None, type=None
+            name="BELOW",
+            index=2,
+            number=2,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     containing_type=None,
@@ -140,6 +177,7 @@ _TIMESERIESQUERY = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="time_series_filter",
@@ -158,6 +196,7 @@ _TIMESERIESQUERY = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="time_series_filter_ratio",
@@ -176,6 +215,7 @@ _TIMESERIESQUERY = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="unit_override",
@@ -194,6 +234,7 @@ _TIMESERIESQUERY = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -209,6 +250,7 @@ _TIMESERIESQUERY = _descriptor.Descriptor(
             full_name="google.monitoring.dashboard.v1.TimeSeriesQuery.source",
             index=0,
             containing_type=None,
+            create_key=_descriptor._internal_create_key,
             fields=[],
         )
     ],
@@ -223,6 +265,7 @@ _TIMESERIESFILTER = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="filter",
@@ -241,6 +284,7 @@ _TIMESERIESFILTER = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="aggregation",
@@ -259,6 +303,7 @@ _TIMESERIESFILTER = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="pick_time_series_filter",
@@ -277,6 +322,7 @@ _TIMESERIESFILTER = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="statistical_time_series_filter",
@@ -295,6 +341,7 @@ _TIMESERIESFILTER = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -310,6 +357,7 @@ _TIMESERIESFILTER = _descriptor.Descriptor(
             full_name="google.monitoring.dashboard.v1.TimeSeriesFilter.output_filter",
             index=0,
             containing_type=None,
+            create_key=_descriptor._internal_create_key,
             fields=[],
         )
     ],
@@ -324,6 +372,7 @@ _TIMESERIESFILTERRATIO_RATIOPART = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="filter",
@@ -342,6 +391,7 @@ _TIMESERIESFILTERRATIO_RATIOPART = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="aggregation",
@@ -360,6 +410,7 @@ _TIMESERIESFILTERRATIO_RATIOPART = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -380,6 +431,7 @@ _TIMESERIESFILTERRATIO = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="numerator",
@@ -398,6 +450,7 @@ _TIMESERIESFILTERRATIO = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="denominator",
@@ -416,6 +469,7 @@ _TIMESERIESFILTERRATIO = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="secondary_aggregation",
@@ -434,6 +488,7 @@ _TIMESERIESFILTERRATIO = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="pick_time_series_filter",
@@ -452,6 +507,7 @@ _TIMESERIESFILTERRATIO = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="statistical_time_series_filter",
@@ -470,6 +526,7 @@ _TIMESERIESFILTERRATIO = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -485,6 +542,7 @@ _TIMESERIESFILTERRATIO = _descriptor.Descriptor(
             full_name="google.monitoring.dashboard.v1.TimeSeriesFilterRatio.output_filter",
             index=0,
             containing_type=None,
+            create_key=_descriptor._internal_create_key,
             fields=[],
         )
     ],
@@ -499,6 +557,7 @@ _THRESHOLD = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="label",
@@ -517,6 +576,7 @@ _THRESHOLD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="value",
@@ -535,6 +595,7 @@ _THRESHOLD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="color",
@@ -553,6 +614,7 @@ _THRESHOLD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="direction",
@@ -571,6 +633,7 @@ _THRESHOLD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],

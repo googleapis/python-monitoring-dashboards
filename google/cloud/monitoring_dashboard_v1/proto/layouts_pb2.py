@@ -37,6 +37,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.monitoring.dashboard.v1",
     syntax="proto3",
     serialized_options=b'\n"com.google.monitoring.dashboard.v1B\014LayoutsProtoP\001ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\352\002(Google::Cloud::Monitoring::Dashboard::V1',
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\n8google/cloud/monitoring_dashboard_v1/proto/layouts.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x37google/cloud/monitoring_dashboard_v1/proto/widget.proto"V\n\nGridLayout\x12\x0f\n\x07\x63olumns\x18\x01 \x01(\x03\x12\x37\n\x07widgets\x18\x02 \x03(\x0b\x32&.google.monitoring.dashboard.v1.Widget"\x98\x01\n\tRowLayout\x12;\n\x04rows\x18\x01 \x03(\x0b\x32-.google.monitoring.dashboard.v1.RowLayout.Row\x1aN\n\x03Row\x12\x0e\n\x06weight\x18\x01 \x01(\x03\x12\x37\n\x07widgets\x18\x02 \x03(\x0b\x32&.google.monitoring.dashboard.v1.Widget"\xa7\x01\n\x0c\x43olumnLayout\x12\x44\n\x07\x63olumns\x18\x01 \x03(\x0b\x32\x33.google.monitoring.dashboard.v1.ColumnLayout.Column\x1aQ\n\x06\x43olumn\x12\x0e\n\x06weight\x18\x01 \x01(\x03\x12\x37\n\x07widgets\x18\x02 \x03(\x0b\x32&.google.monitoring.dashboard.v1.WidgetB\xa8\x01\n"com.google.monitoring.dashboard.v1B\x0cLayoutsProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
     dependencies=[
         google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_widget__pb2.DESCRIPTOR
@@ -50,6 +51,7 @@ _GRIDLAYOUT = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="columns",
@@ -68,6 +70,7 @@ _GRIDLAYOUT = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="widgets",
@@ -86,6 +89,7 @@ _GRIDLAYOUT = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -107,6 +111,7 @@ _ROWLAYOUT_ROW = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="weight",
@@ -125,6 +130,7 @@ _ROWLAYOUT_ROW = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="widgets",
@@ -143,6 +149,7 @@ _ROWLAYOUT_ROW = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -163,6 +170,7 @@ _ROWLAYOUT = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="rows",
@@ -181,6 +189,7 @@ _ROWLAYOUT = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         )
     ],
     extensions=[],
@@ -202,6 +211,7 @@ _COLUMNLAYOUT_COLUMN = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="weight",
@@ -220,6 +230,7 @@ _COLUMNLAYOUT_COLUMN = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="widgets",
@@ -238,6 +249,7 @@ _COLUMNLAYOUT_COLUMN = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -258,6 +270,7 @@ _COLUMNLAYOUT = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="columns",
@@ -276,6 +289,7 @@ _COLUMNLAYOUT = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         )
     ],
     extensions=[],

@@ -39,6 +39,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.monitoring.dashboard.v1",
     syntax="proto3",
     serialized_options=b'\n"com.google.monitoring.dashboard.v1B\014XyChartProtoP\001ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\352\002(Google::Cloud::Monitoring::Dashboard::V1',
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\n8google/cloud/monitoring_dashboard_v1/proto/xychart.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x1fgoogle/api/field_behavior.proto\x1a\x38google/cloud/monitoring_dashboard_v1/proto/metrics.proto\x1a\x1egoogle/protobuf/duration.proto"\xf3\x06\n\x07XyChart\x12\x42\n\tdata_sets\x18\x01 \x03(\x0b\x32/.google.monitoring.dashboard.v1.XyChart.DataSet\x12\x35\n\x12timeshift_duration\x18\x04 \x01(\x0b\x32\x19.google.protobuf.Duration\x12=\n\nthresholds\x18\x05 \x03(\x0b\x32).google.monitoring.dashboard.v1.Threshold\x12<\n\x06x_axis\x18\x06 \x01(\x0b\x32,.google.monitoring.dashboard.v1.XyChart.Axis\x12<\n\x06y_axis\x18\x07 \x01(\x0b\x32,.google.monitoring.dashboard.v1.XyChart.Axis\x12\x43\n\rchart_options\x18\x08 \x01(\x0b\x32,.google.monitoring.dashboard.v1.ChartOptions\x1a\xda\x02\n\x07\x44\x61taSet\x12J\n\x11time_series_query\x18\x01 \x01(\x0b\x32/.google.monitoring.dashboard.v1.TimeSeriesQuery\x12K\n\tplot_type\x18\x02 \x01(\x0e\x32\x38.google.monitoring.dashboard.v1.XyChart.DataSet.PlotType\x12\x17\n\x0flegend_template\x18\x03 \x01(\t\x12<\n\x14min_alignment_period\x18\x04 \x01(\x0b\x32\x19.google.protobuf.DurationB\x03\xe0\x41\x01"_\n\x08PlotType\x12\x19\n\x15PLOT_TYPE_UNSPECIFIED\x10\x00\x12\x08\n\x04LINE\x10\x01\x12\x10\n\x0cSTACKED_AREA\x10\x02\x12\x0f\n\x0bSTACKED_BAR\x10\x03\x12\x0b\n\x07HEATMAP\x10\x04\x1a\x8f\x01\n\x04\x41xis\x12\r\n\x05label\x18\x01 \x01(\t\x12\x41\n\x05scale\x18\x02 \x01(\x0e\x32\x32.google.monitoring.dashboard.v1.XyChart.Axis.Scale"5\n\x05Scale\x12\x15\n\x11SCALE_UNSPECIFIED\x10\x00\x12\n\n\x06LINEAR\x10\x01\x12\t\n\x05LOG10\x10\x02"\x8e\x01\n\x0c\x43hartOptions\x12?\n\x04mode\x18\x01 \x01(\x0e\x32\x31.google.monitoring.dashboard.v1.ChartOptions.Mode"=\n\x04Mode\x12\x14\n\x10MODE_UNSPECIFIED\x10\x00\x12\t\n\x05\x43OLOR\x10\x01\x12\t\n\x05X_RAY\x10\x02\x12\t\n\x05STATS\x10\x03\x42\xa8\x01\n"com.google.monitoring.dashboard.v1B\x0cXyChartProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
     dependencies=[
         google_dot_api_dot_field__behavior__pb2.DESCRIPTOR,
@@ -53,6 +54,7 @@ _XYCHART_DATASET_PLOTTYPE = _descriptor.EnumDescriptor(
     full_name="google.monitoring.dashboard.v1.XyChart.DataSet.PlotType",
     filename=None,
     file=DESCRIPTOR,
+    create_key=_descriptor._internal_create_key,
     values=[
         _descriptor.EnumValueDescriptor(
             name="PLOT_TYPE_UNSPECIFIED",
@@ -60,18 +62,39 @@ _XYCHART_DATASET_PLOTTYPE = _descriptor.EnumDescriptor(
             number=0,
             serialized_options=None,
             type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="LINE", index=1, number=1, serialized_options=None, type=None
+            name="LINE",
+            index=1,
+            number=1,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="STACKED_AREA", index=2, number=2, serialized_options=None, type=None
+            name="STACKED_AREA",
+            index=2,
+            number=2,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="STACKED_BAR", index=3, number=3, serialized_options=None, type=None
+            name="STACKED_BAR",
+            index=3,
+            number=3,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="HEATMAP", index=4, number=4, serialized_options=None, type=None
+            name="HEATMAP",
+            index=4,
+            number=4,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     containing_type=None,
@@ -86,6 +109,7 @@ _XYCHART_AXIS_SCALE = _descriptor.EnumDescriptor(
     full_name="google.monitoring.dashboard.v1.XyChart.Axis.Scale",
     filename=None,
     file=DESCRIPTOR,
+    create_key=_descriptor._internal_create_key,
     values=[
         _descriptor.EnumValueDescriptor(
             name="SCALE_UNSPECIFIED",
@@ -93,12 +117,23 @@ _XYCHART_AXIS_SCALE = _descriptor.EnumDescriptor(
             number=0,
             serialized_options=None,
             type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="LINEAR", index=1, number=1, serialized_options=None, type=None
+            name="LINEAR",
+            index=1,
+            number=1,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="LOG10", index=2, number=2, serialized_options=None, type=None
+            name="LOG10",
+            index=2,
+            number=2,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     containing_type=None,
@@ -113,6 +148,7 @@ _CHARTOPTIONS_MODE = _descriptor.EnumDescriptor(
     full_name="google.monitoring.dashboard.v1.ChartOptions.Mode",
     filename=None,
     file=DESCRIPTOR,
+    create_key=_descriptor._internal_create_key,
     values=[
         _descriptor.EnumValueDescriptor(
             name="MODE_UNSPECIFIED",
@@ -120,15 +156,31 @@ _CHARTOPTIONS_MODE = _descriptor.EnumDescriptor(
             number=0,
             serialized_options=None,
             type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="COLOR", index=1, number=1, serialized_options=None, type=None
+            name="COLOR",
+            index=1,
+            number=1,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="X_RAY", index=2, number=2, serialized_options=None, type=None
+            name="X_RAY",
+            index=2,
+            number=2,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="STATS", index=3, number=3, serialized_options=None, type=None
+            name="STATS",
+            index=3,
+            number=3,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     containing_type=None,
@@ -145,6 +197,7 @@ _XYCHART_DATASET = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="time_series_query",
@@ -163,6 +216,7 @@ _XYCHART_DATASET = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="plot_type",
@@ -181,6 +235,7 @@ _XYCHART_DATASET = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="legend_template",
@@ -199,6 +254,7 @@ _XYCHART_DATASET = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="min_alignment_period",
@@ -217,6 +273,7 @@ _XYCHART_DATASET = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\001",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -237,6 +294,7 @@ _XYCHART_AXIS = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="label",
@@ -255,6 +313,7 @@ _XYCHART_AXIS = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="scale",
@@ -273,6 +332,7 @@ _XYCHART_AXIS = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -293,6 +353,7 @@ _XYCHART = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="data_sets",
@@ -311,6 +372,7 @@ _XYCHART = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="timeshift_duration",
@@ -329,6 +391,7 @@ _XYCHART = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="thresholds",
@@ -347,6 +410,7 @@ _XYCHART = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="x_axis",
@@ -365,6 +429,7 @@ _XYCHART = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="y_axis",
@@ -383,6 +448,7 @@ _XYCHART = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="chart_options",
@@ -401,6 +467,7 @@ _XYCHART = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -422,6 +489,7 @@ _CHARTOPTIONS = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="mode",
@@ -440,6 +508,7 @@ _CHARTOPTIONS = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         )
     ],
     extensions=[],
