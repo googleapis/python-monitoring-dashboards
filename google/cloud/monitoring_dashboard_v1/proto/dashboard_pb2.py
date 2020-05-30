@@ -222,10 +222,8 @@ Dashboard = _reflection.GeneratedProtocolMessageType(
     {
         "DESCRIPTOR": _DASHBOARD,
         "__module__": "google.cloud.monitoring_dashboard_v1.proto.dashboard_pb2",
-        "__doc__": """A Google Stackdriver dashboard. Dashboards define the
-  content and layout of pages in the Stackdriver web application.
-  
-  
+        "__doc__": """A Google Stackdriver dashboard. Dashboards define the content and
+  layout of pages in the Stackdriver web application.
   Attributes:
       name:
           The resource name of the dashboard.

@@ -684,10 +684,8 @@ TimeSeriesQuery = _reflection.GeneratedProtocolMessageType(
     {
         "DESCRIPTOR": _TIMESERIESQUERY,
         "__module__": "google.cloud.monitoring_dashboard_v1.proto.metrics_pb2",
-        "__doc__": """TimeSeriesQuery collects the set of supported methods for
-  querying time series data from the Stackdriver metrics API.
-  
-  
+        "__doc__": """TimeSeriesQuery collects the set of supported methods for querying
+  time series data from the Stackdriver metrics API.
   Attributes:
       source:
           Parameters needed to obtain data for the chart.
@@ -713,12 +711,9 @@ TimeSeriesFilter = _reflection.GeneratedProtocolMessageType(
     {
         "DESCRIPTOR": _TIMESERIESFILTER,
         "__module__": "google.cloud.monitoring_dashboard_v1.proto.metrics_pb2",
-        "__doc__": """A filter that defines a subset of time series data that is
-  displayed in a widget. Time series data is fetched using the
-  ```ListTimeSeries`` </monitoring/api/ref_v3/rest/v3/projects.timeSeries/list>`__
-  method.
-  
-  
+        "__doc__": """A filter that defines a subset of time series data that is displayed
+  in a widget. Time series data is fetched using the ```ListTimeSeries``
+  </monitoring/api/ref_v3/rest/v3/projects.timeSeries/list>`__ method.
   Attributes:
       filter:
           Required. The `monitoring filter
@@ -750,10 +745,8 @@ TimeSeriesFilterRatio = _reflection.GeneratedProtocolMessageType(
             {
                 "DESCRIPTOR": _TIMESERIESFILTERRATIO_RATIOPART,
                 "__module__": "google.cloud.monitoring_dashboard_v1.proto.metrics_pb2",
-                "__doc__": """Describes a query to build the numerator or denominator of
-    a TimeSeriesFilterRatio.
-    
-    
+                "__doc__": """Describes a query to build the numerator or denominator of a
+    TimeSeriesFilterRatio.
     Attributes:
         filter:
             Required. The `monitoring filter
@@ -769,11 +762,9 @@ TimeSeriesFilterRatio = _reflection.GeneratedProtocolMessageType(
         ),
         "DESCRIPTOR": _TIMESERIESFILTERRATIO,
         "__module__": "google.cloud.monitoring_dashboard_v1.proto.metrics_pb2",
-        "__doc__": """A pair of time series filters that define a ratio
-  computation. The output time series is the pair-wise division of each
-  aligned element from the numerator and denominator time series.
-  
-  
+        "__doc__": """A pair of time series filters that define a ratio computation. The
+  output time series is the pair-wise division of each aligned element
+  from the numerator and denominator time series.
   Attributes:
       numerator:
           The numerator of the ratio.
@@ -802,8 +793,6 @@ Threshold = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _THRESHOLD,
         "__module__": "google.cloud.monitoring_dashboard_v1.proto.metrics_pb2",
         "__doc__": """Defines a threshold for categorizing time series values.
-  
-  
   Attributes:
       label:
           A label for the threshold.

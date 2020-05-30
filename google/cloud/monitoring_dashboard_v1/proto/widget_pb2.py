@@ -207,10 +207,8 @@ Widget = _reflection.GeneratedProtocolMessageType(
     {
         "DESCRIPTOR": _WIDGET,
         "__module__": "google.cloud.monitoring_dashboard_v1.proto.widget_pb2",
-        "__doc__": """Widget contains a single dashboard component and
-  configuration of how to present the component in the dashboard.
-  
-  
+        "__doc__": """Widget contains a single dashboard component and configuration of how
+  to present the component in the dashboard.
   Attributes:
       title:
           Optional. The title of the widget.
