@@ -132,8 +132,6 @@ Text = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _TEXT,
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.text_pb2",
         "__doc__": """A widget that displays textual content.
-  
-  
   Attributes:
       content:
           The text content to be displayed.
