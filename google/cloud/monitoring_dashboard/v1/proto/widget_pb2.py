@@ -45,6 +45,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.monitoring.dashboard.v1",
     syntax="proto3",
     serialized_options=b'\n"com.google.monitoring.dashboard.v1B\013WidgetProtoP\001ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\352\002(Google::Cloud::Monitoring::Dashboard::V1',
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b"\n7google/cloud/monitoring_dashboard_v1/proto/widget.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x1fgoogle/api/field_behavior.proto\x1a:google/cloud/monitoring_dashboard_v1/proto/scorecard.proto\x1a\x35google/cloud/monitoring_dashboard_v1/proto/text.proto\x1a\x38google/cloud/monitoring_dashboard_v1/proto/xychart.proto\x1a\x1bgoogle/protobuf/empty.proto\"\x83\x02\n\x06Widget\x12\x12\n\x05title\x18\x01 \x01(\tB\x03\xe0\x41\x01\x12;\n\x08xy_chart\x18\x02 \x01(\x0b\x32'.google.monitoring.dashboard.v1.XyChartH\x00\x12>\n\tscorecard\x18\x03 \x01(\x0b\x32).google.monitoring.dashboard.v1.ScorecardH\x00\x12\x34\n\x04text\x18\x04 \x01(\x0b\x32$.google.monitoring.dashboard.v1.TextH\x00\x12'\n\x05\x62lank\x18\x05 \x01(\x0b\x32\x16.google.protobuf.EmptyH\x00\x42\t\n\x07\x63ontentB\xa7\x01\n\"com.google.monitoring.dashboard.v1B\x0bWidgetProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3",
     dependencies=[
         google_dot_api_dot_field__behavior__pb2.DESCRIPTOR,
@@ -62,6 +63,7 @@ _WIDGET = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="title",
@@ -80,6 +82,7 @@ _WIDGET = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\001",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="xy_chart",
@@ -98,6 +101,7 @@ _WIDGET = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="scorecard",
@@ -116,6 +120,7 @@ _WIDGET = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="text",
@@ -134,6 +139,7 @@ _WIDGET = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="blank",
@@ -152,6 +158,7 @@ _WIDGET = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -167,6 +174,7 @@ _WIDGET = _descriptor.Descriptor(
             full_name="google.monitoring.dashboard.v1.Widget.content",
             index=0,
             containing_type=None,
+            create_key=_descriptor._internal_create_key,
             fields=[],
         ),
     ],

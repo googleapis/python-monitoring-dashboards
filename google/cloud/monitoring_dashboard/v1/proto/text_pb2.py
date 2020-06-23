@@ -32,6 +32,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.monitoring.dashboard.v1",
     syntax="proto3",
     serialized_options=b'\n"com.google.monitoring.dashboard.v1B\tTextProtoP\001ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\352\002(Google::Cloud::Monitoring::Dashboard::V1',
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\n5google/cloud/monitoring_dashboard_v1/proto/text.proto\x12\x1egoogle.monitoring.dashboard.v1"\x8d\x01\n\x04Text\x12\x0f\n\x07\x63ontent\x18\x01 \x01(\t\x12;\n\x06\x66ormat\x18\x02 \x01(\x0e\x32+.google.monitoring.dashboard.v1.Text.Format"7\n\x06\x46ormat\x12\x16\n\x12\x46ORMAT_UNSPECIFIED\x10\x00\x12\x0c\n\x08MARKDOWN\x10\x01\x12\x07\n\x03RAW\x10\x02\x42\xa5\x01\n"com.google.monitoring.dashboard.v1B\tTextProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
 )
 
@@ -41,6 +42,7 @@ _TEXT_FORMAT = _descriptor.EnumDescriptor(
     full_name="google.monitoring.dashboard.v1.Text.Format",
     filename=None,
     file=DESCRIPTOR,
+    create_key=_descriptor._internal_create_key,
     values=[
         _descriptor.EnumValueDescriptor(
             name="FORMAT_UNSPECIFIED",
@@ -48,12 +50,23 @@ _TEXT_FORMAT = _descriptor.EnumDescriptor(
             number=0,
             serialized_options=None,
             type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="MARKDOWN", index=1, number=1, serialized_options=None, type=None
+            name="MARKDOWN",
+            index=1,
+            number=1,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.EnumValueDescriptor(
-            name="RAW", index=2, number=2, serialized_options=None, type=None
+            name="RAW",
+            index=2,
+            number=2,
+            serialized_options=None,
+            type=None,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     containing_type=None,
@@ -70,6 +83,7 @@ _TEXT = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="content",
@@ -88,6 +102,7 @@ _TEXT = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="format",
@@ -106,6 +121,7 @@ _TEXT = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],

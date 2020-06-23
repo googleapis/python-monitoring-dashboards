@@ -42,6 +42,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.monitoring.dashboard.v1",
     syntax="proto3",
     serialized_options=b'\n"com.google.monitoring.dashboard.v1B\026DashboardsServiceProtoP\001ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\352\002(Google::Cloud::Monitoring::Dashboard::V1',
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\nCgoogle/cloud/monitoring_dashboard_v1/proto/dashboards_service.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x1cgoogle/api/annotations.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a:google/cloud/monitoring_dashboard_v1/proto/dashboard.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a google/protobuf/field_mask.proto\x1a\x17google/api/client.proto"p\n\x16\x43reateDashboardRequest\x12\x13\n\x06parent\x18\x01 \x01(\tB\x03\xe0\x41\x02\x12\x41\n\tdashboard\x18\x02 \x01(\x0b\x32).google.monitoring.dashboard.v1.DashboardB\x03\xe0\x41\x02"S\n\x15ListDashboardsRequest\x12\x13\n\x06parent\x18\x01 \x01(\tB\x03\xe0\x41\x02\x12\x11\n\tpage_size\x18\x02 \x01(\x05\x12\x12\n\npage_token\x18\x03 \x01(\t"p\n\x16ListDashboardsResponse\x12=\n\ndashboards\x18\x01 \x03(\x0b\x32).google.monitoring.dashboard.v1.Dashboard\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t"(\n\x13GetDashboardRequest\x12\x11\n\x04name\x18\x01 \x01(\tB\x03\xe0\x41\x02"+\n\x16\x44\x65leteDashboardRequest\x12\x11\n\x04name\x18\x01 \x01(\tB\x03\xe0\x41\x02"[\n\x16UpdateDashboardRequest\x12\x41\n\tdashboard\x18\x01 \x01(\x0b\x32).google.monitoring.dashboard.v1.DashboardB\x03\xe0\x41\x02\x32\xb1\x08\n\x11\x44\x61shboardsService\x12\xab\x01\n\x0f\x43reateDashboard\x12\x36.google.monitoring.dashboard.v1.CreateDashboardRequest\x1a).google.monitoring.dashboard.v1.Dashboard"5\x82\xd3\xe4\x93\x02/""/v1/{parent=projects/*}/dashboards:\tdashboard\x12\xab\x01\n\x0eListDashboards\x12\x35.google.monitoring.dashboard.v1.ListDashboardsRequest\x1a\x36.google.monitoring.dashboard.v1.ListDashboardsResponse"*\x82\xd3\xe4\x93\x02$\x12"/v1/{parent=projects/*}/dashboards\x12\x9a\x01\n\x0cGetDashboard\x12\x33.google.monitoring.dashboard.v1.GetDashboardRequest\x1a).google.monitoring.dashboard.v1.Dashboard"*\x82\xd3\xe4\x93\x02$\x12"/v1/{name=projects/*/dashboards/*}\x12\x8d\x01\n\x0f\x44\x65leteDashboard\x12\x36.google.monitoring.dashboard.v1.DeleteDashboardRequest\x1a\x16.google.protobuf.Empty"*\x82\xd3\xe4\x93\x02$*"/v1/{name=projects/*/dashboards/*}\x12\xb5\x01\n\x0fUpdateDashboard\x12\x36.google.monitoring.dashboard.v1.UpdateDashboardRequest\x1a).google.monitoring.dashboard.v1.Dashboard"?\x82\xd3\xe4\x93\x02\x39\x32,/v1/{dashboard.name=projects/*/dashboards/*}:\tdashboard\x1a\xda\x01\xca\x41\x19monitoring.googleapis.com\xd2\x41\xba\x01https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/monitoring,https://www.googleapis.com/auth/monitoring.read,https://www.googleapis.com/auth/monitoring.writeB\xb2\x01\n"com.google.monitoring.dashboard.v1B\x16\x44\x61shboardsServiceProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
     dependencies=[
         google_dot_api_dot_annotations__pb2.DESCRIPTOR,
@@ -60,6 +61,7 @@ _CREATEDASHBOARDREQUEST = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="parent",
@@ -78,6 +80,7 @@ _CREATEDASHBOARDREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="dashboard",
@@ -96,6 +99,7 @@ _CREATEDASHBOARDREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -117,6 +121,7 @@ _LISTDASHBOARDSREQUEST = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="parent",
@@ -135,6 +140,7 @@ _LISTDASHBOARDSREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="page_size",
@@ -153,6 +159,7 @@ _LISTDASHBOARDSREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="page_token",
@@ -171,6 +178,7 @@ _LISTDASHBOARDSREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -192,6 +200,7 @@ _LISTDASHBOARDSRESPONSE = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="dashboards",
@@ -210,6 +219,7 @@ _LISTDASHBOARDSRESPONSE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="next_page_token",
@@ -228,6 +238,7 @@ _LISTDASHBOARDSRESPONSE = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -249,6 +260,7 @@ _GETDASHBOARDREQUEST = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="name",
@@ -267,6 +279,7 @@ _GETDASHBOARDREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -288,6 +301,7 @@ _DELETEDASHBOARDREQUEST = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="name",
@@ -306,6 +320,7 @@ _DELETEDASHBOARDREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -327,6 +342,7 @@ _UPDATEDASHBOARDREQUEST = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="dashboard",
@@ -345,6 +361,7 @@ _UPDATEDASHBOARDREQUEST = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=b"\340A\002",
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -517,6 +534,7 @@ _DASHBOARDSSERVICE = _descriptor.ServiceDescriptor(
     file=DESCRIPTOR,
     index=0,
     serialized_options=b"\312A\031monitoring.googleapis.com\322A\272\001https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/monitoring,https://www.googleapis.com/auth/monitoring.read,https://www.googleapis.com/auth/monitoring.write",
+    create_key=_descriptor._internal_create_key,
     serialized_start=808,
     serialized_end=1881,
     methods=[
@@ -528,6 +546,7 @@ _DASHBOARDSSERVICE = _descriptor.ServiceDescriptor(
             input_type=_CREATEDASHBOARDREQUEST,
             output_type=google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_dashboard__pb2._DASHBOARD,
             serialized_options=b'\202\323\344\223\002/""/v1/{parent=projects/*}/dashboards:\tdashboard',
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.MethodDescriptor(
             name="ListDashboards",
@@ -537,6 +556,7 @@ _DASHBOARDSSERVICE = _descriptor.ServiceDescriptor(
             input_type=_LISTDASHBOARDSREQUEST,
             output_type=_LISTDASHBOARDSRESPONSE,
             serialized_options=b'\202\323\344\223\002$\022"/v1/{parent=projects/*}/dashboards',
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.MethodDescriptor(
             name="GetDashboard",
@@ -546,6 +566,7 @@ _DASHBOARDSSERVICE = _descriptor.ServiceDescriptor(
             input_type=_GETDASHBOARDREQUEST,
             output_type=google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_dashboard__pb2._DASHBOARD,
             serialized_options=b'\202\323\344\223\002$\022"/v1/{name=projects/*/dashboards/*}',
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.MethodDescriptor(
             name="DeleteDashboard",
@@ -555,6 +576,7 @@ _DASHBOARDSSERVICE = _descriptor.ServiceDescriptor(
             input_type=_DELETEDASHBOARDREQUEST,
             output_type=google_dot_protobuf_dot_empty__pb2._EMPTY,
             serialized_options=b'\202\323\344\223\002$*"/v1/{name=projects/*/dashboards/*}',
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.MethodDescriptor(
             name="UpdateDashboard",
@@ -564,6 +586,7 @@ _DASHBOARDSSERVICE = _descriptor.ServiceDescriptor(
             input_type=_UPDATEDASHBOARDREQUEST,
             output_type=google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_dashboard__pb2._DASHBOARD,
             serialized_options=b"\202\323\344\223\00292,/v1/{dashboard.name=projects/*/dashboards/*}:\tdashboard",
+            create_key=_descriptor._internal_create_key,
         ),
     ],
 )

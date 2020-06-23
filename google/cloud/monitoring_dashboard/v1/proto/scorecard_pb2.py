@@ -38,6 +38,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.monitoring.dashboard.v1",
     syntax="proto3",
     serialized_options=b'\n"com.google.monitoring.dashboard.v1B\016ScorecardProtoP\001ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\352\002(Google::Cloud::Monitoring::Dashboard::V1',
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\n:google/cloud/monitoring_dashboard_v1/proto/scorecard.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x38google/cloud/monitoring_dashboard_v1/proto/metrics.proto\x1a\x1egoogle/protobuf/duration.proto"\x91\x04\n\tScorecard\x12J\n\x11time_series_query\x18\x01 \x01(\x0b\x32/.google.monitoring.dashboard.v1.TimeSeriesQuery\x12I\n\ngauge_view\x18\x04 \x01(\x0b\x32\x33.google.monitoring.dashboard.v1.Scorecard.GaugeViewH\x00\x12T\n\x10spark_chart_view\x18\x05 \x01(\x0b\x32\x38.google.monitoring.dashboard.v1.Scorecard.SparkChartViewH\x00\x12=\n\nthresholds\x18\x06 \x03(\x0b\x32).google.monitoring.dashboard.v1.Threshold\x1a\x35\n\tGaugeView\x12\x13\n\x0blower_bound\x18\x01 \x01(\x01\x12\x13\n\x0bupper_bound\x18\x02 \x01(\x01\x1a\x93\x01\n\x0eSparkChartView\x12H\n\x10spark_chart_type\x18\x01 \x01(\x0e\x32..google.monitoring.dashboard.v1.SparkChartType\x12\x37\n\x14min_alignment_period\x18\x02 \x01(\x0b\x32\x19.google.protobuf.DurationB\x0b\n\tdata_viewB\xaa\x01\n"com.google.monitoring.dashboard.v1B\x0eScorecardProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
     dependencies=[
         google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_metrics__pb2.DESCRIPTOR,
@@ -52,6 +53,7 @@ _SCORECARD_GAUGEVIEW = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="lower_bound",
@@ -70,6 +72,7 @@ _SCORECARD_GAUGEVIEW = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="upper_bound",
@@ -88,6 +91,7 @@ _SCORECARD_GAUGEVIEW = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -108,6 +112,7 @@ _SCORECARD_SPARKCHARTVIEW = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="spark_chart_type",
@@ -126,6 +131,7 @@ _SCORECARD_SPARKCHARTVIEW = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="min_alignment_period",
@@ -144,6 +150,7 @@ _SCORECARD_SPARKCHARTVIEW = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -164,6 +171,7 @@ _SCORECARD = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="time_series_query",
@@ -182,6 +190,7 @@ _SCORECARD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="gauge_view",
@@ -200,6 +209,7 @@ _SCORECARD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="spark_chart_view",
@@ -218,6 +228,7 @@ _SCORECARD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="thresholds",
@@ -236,6 +247,7 @@ _SCORECARD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -251,6 +263,7 @@ _SCORECARD = _descriptor.Descriptor(
             full_name="google.monitoring.dashboard.v1.Scorecard.data_view",
             index=0,
             containing_type=None,
+            create_key=_descriptor._internal_create_key,
             fields=[],
         ),
     ],

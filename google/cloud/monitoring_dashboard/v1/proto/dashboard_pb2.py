@@ -37,6 +37,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     package="google.monitoring.dashboard.v1",
     syntax="proto3",
     serialized_options=b'\n"com.google.monitoring.dashboard.v1B\017DashboardsProtoP\001ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\352\002(Google::Cloud::Monitoring::Dashboard::V1',
+    create_key=_descriptor._internal_create_key,
     serialized_pb=b'\n:google/cloud/monitoring_dashboard_v1/proto/dashboard.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x38google/cloud/monitoring_dashboard_v1/proto/layouts.proto"\x92\x02\n\tDashboard\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x14\n\x0c\x64isplay_name\x18\x02 \x01(\t\x12\x0c\n\x04\x65tag\x18\x04 \x01(\t\x12\x41\n\x0bgrid_layout\x18\x05 \x01(\x0b\x32*.google.monitoring.dashboard.v1.GridLayoutH\x00\x12?\n\nrow_layout\x18\x08 \x01(\x0b\x32).google.monitoring.dashboard.v1.RowLayoutH\x00\x12\x45\n\rcolumn_layout\x18\t \x01(\x0b\x32,.google.monitoring.dashboard.v1.ColumnLayoutH\x00\x42\x08\n\x06layoutB\xab\x01\n"com.google.monitoring.dashboard.v1B\x0f\x44\x61shboardsProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
     dependencies=[
         google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_layouts__pb2.DESCRIPTOR,
@@ -50,6 +51,7 @@ _DASHBOARD = _descriptor.Descriptor(
     filename=None,
     file=DESCRIPTOR,
     containing_type=None,
+    create_key=_descriptor._internal_create_key,
     fields=[
         _descriptor.FieldDescriptor(
             name="name",
@@ -68,6 +70,7 @@ _DASHBOARD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="display_name",
@@ -86,6 +89,7 @@ _DASHBOARD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="etag",
@@ -104,6 +108,7 @@ _DASHBOARD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="grid_layout",
@@ -122,6 +127,7 @@ _DASHBOARD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="row_layout",
@@ -140,6 +146,7 @@ _DASHBOARD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
             name="column_layout",
@@ -158,6 +165,7 @@ _DASHBOARD = _descriptor.Descriptor(
             extension_scope=None,
             serialized_options=None,
             file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
         ),
     ],
     extensions=[],
@@ -173,6 +181,7 @@ _DASHBOARD = _descriptor.Descriptor(
             full_name="google.monitoring.dashboard.v1.Dashboard.layout",
             index=0,
             containing_type=None,
+            create_key=_descriptor._internal_create_key,
             fields=[],
         ),
     ],
