@@ -743,7 +743,7 @@ Aggregation = _reflection.GeneratedProtocolMessageType(
   ``per_series_aligner``) followed by an optional reduction step of the
   data across the aligned time series (``cross_series_reducer`` and
   ``group_by_fields``). For more details, see `Aggregation
-  </monitoring/api/learn_more#aggregation>`__.
+  <https://cloud.google.com/monitoring/api/learn_more#aggregation>`__.
   Attributes:
       alignment_period:
           The alignment period for per-[time series][TimeSeries]

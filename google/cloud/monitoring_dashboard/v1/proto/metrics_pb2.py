@@ -759,9 +759,9 @@ TimeSeriesQuery = _reflection.GeneratedProtocolMessageType(
       unit_override:
           The unit of data contained in fetched time series. If non-
           empty, this unit will override any unit that accompanies
-          fetched data. The format is the same as the ```unit``
-          </monitoring/api/ref_v3/rest/v3/projects.metricDescriptors>`__
-          field in ``MetricDescriptor``.
+          fetched data. The format is the same as the ```unit`` <https:/
+          /cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.metri
+          cDescriptors>`__ field in ``MetricDescriptor``.
   """,
         # @@protoc_insertion_point(class_scope:google.monitoring.dashboard.v1.TimeSeriesQuery)
     },
@@ -776,12 +776,13 @@ TimeSeriesFilter = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.metrics_pb2",
         "__doc__": """A filter that defines a subset of time series data that is displayed
   in a widget. Time series data is fetched using the ```ListTimeSeries``
-  </monitoring/api/ref_v3/rest/v3/projects.timeSeries/list>`__ method.
+  <https://cloud.google.com/monitoring/api/ref_v3/rest/v3/projects.timeS
+  eries/list>`__ method.
   Attributes:
       filter:
           Required. The `monitoring filter
-          </monitoring/api/v3/filters>`__ that identifies the metric
-          types, resources, and projects to query.
+          <https://cloud.google.com/monitoring/api/v3/filters>`__ that
+          identifies the metric types, resources, and projects to query.
       aggregation:
           By default, the raw time series data is returned. Use this
           field to combine multiple time series for different views of
@@ -813,8 +814,8 @@ TimeSeriesFilterRatio = _reflection.GeneratedProtocolMessageType(
     Attributes:
         filter:
             Required. The `monitoring filter
-            </monitoring/api/v3/filters>`__ that identifies the metric
-            types, resources, and projects to query.
+            <https://cloud.google.com/monitoring/api/v3/filters>`__ that
+            identifies the metric types, resources, and projects to query.
         aggregation:
             By default, the raw time series data is returned. Use this
             field to combine multiple time series for different views of
