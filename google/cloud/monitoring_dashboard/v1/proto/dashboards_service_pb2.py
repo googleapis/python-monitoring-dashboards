@@ -29,6 +29,7 @@ _sym_db = _symbol_database.Default()
 
 from google.api import annotations_pb2 as google_dot_api_dot_annotations__pb2
 from google.api import field_behavior_pb2 as google_dot_api_dot_field__behavior__pb2
+from google.api import resource_pb2 as google_dot_api_dot_resource__pb2
 from google.cloud.monitoring_dashboard.v1.proto import (
     dashboard_pb2 as google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_dashboard__pb2,
 )
@@ -43,10 +44,11 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     syntax="proto3",
     serialized_options=b'\n"com.google.monitoring.dashboard.v1B\026DashboardsServiceProtoP\001ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\352\002(Google::Cloud::Monitoring::Dashboard::V1',
     create_key=_descriptor._internal_create_key,
-    serialized_pb=b'\nCgoogle/cloud/monitoring_dashboard_v1/proto/dashboards_service.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x1cgoogle/api/annotations.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a:google/cloud/monitoring_dashboard_v1/proto/dashboard.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a google/protobuf/field_mask.proto\x1a\x17google/api/client.proto"p\n\x16\x43reateDashboardRequest\x12\x13\n\x06parent\x18\x01 \x01(\tB\x03\xe0\x41\x02\x12\x41\n\tdashboard\x18\x02 \x01(\x0b\x32).google.monitoring.dashboard.v1.DashboardB\x03\xe0\x41\x02"S\n\x15ListDashboardsRequest\x12\x13\n\x06parent\x18\x01 \x01(\tB\x03\xe0\x41\x02\x12\x11\n\tpage_size\x18\x02 \x01(\x05\x12\x12\n\npage_token\x18\x03 \x01(\t"p\n\x16ListDashboardsResponse\x12=\n\ndashboards\x18\x01 \x03(\x0b\x32).google.monitoring.dashboard.v1.Dashboard\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t"(\n\x13GetDashboardRequest\x12\x11\n\x04name\x18\x01 \x01(\tB\x03\xe0\x41\x02"+\n\x16\x44\x65leteDashboardRequest\x12\x11\n\x04name\x18\x01 \x01(\tB\x03\xe0\x41\x02"[\n\x16UpdateDashboardRequest\x12\x41\n\tdashboard\x18\x01 \x01(\x0b\x32).google.monitoring.dashboard.v1.DashboardB\x03\xe0\x41\x02\x32\xb1\x08\n\x11\x44\x61shboardsService\x12\xab\x01\n\x0f\x43reateDashboard\x12\x36.google.monitoring.dashboard.v1.CreateDashboardRequest\x1a).google.monitoring.dashboard.v1.Dashboard"5\x82\xd3\xe4\x93\x02/""/v1/{parent=projects/*}/dashboards:\tdashboard\x12\xab\x01\n\x0eListDashboards\x12\x35.google.monitoring.dashboard.v1.ListDashboardsRequest\x1a\x36.google.monitoring.dashboard.v1.ListDashboardsResponse"*\x82\xd3\xe4\x93\x02$\x12"/v1/{parent=projects/*}/dashboards\x12\x9a\x01\n\x0cGetDashboard\x12\x33.google.monitoring.dashboard.v1.GetDashboardRequest\x1a).google.monitoring.dashboard.v1.Dashboard"*\x82\xd3\xe4\x93\x02$\x12"/v1/{name=projects/*/dashboards/*}\x12\x8d\x01\n\x0f\x44\x65leteDashboard\x12\x36.google.monitoring.dashboard.v1.DeleteDashboardRequest\x1a\x16.google.protobuf.Empty"*\x82\xd3\xe4\x93\x02$*"/v1/{name=projects/*/dashboards/*}\x12\xb5\x01\n\x0fUpdateDashboard\x12\x36.google.monitoring.dashboard.v1.UpdateDashboardRequest\x1a).google.monitoring.dashboard.v1.Dashboard"?\x82\xd3\xe4\x93\x02\x39\x32,/v1/{dashboard.name=projects/*/dashboards/*}:\tdashboard\x1a\xda\x01\xca\x41\x19monitoring.googleapis.com\xd2\x41\xba\x01https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/monitoring,https://www.googleapis.com/auth/monitoring.read,https://www.googleapis.com/auth/monitoring.writeB\xb2\x01\n"com.google.monitoring.dashboard.v1B\x16\x44\x61shboardsServiceProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
+    serialized_pb=b'\nCgoogle/cloud/monitoring_dashboard_v1/proto/dashboards_service.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x1cgoogle/api/annotations.proto\x1a\x1fgoogle/api/field_behavior.proto\x1a\x19google/api/resource.proto\x1a:google/cloud/monitoring_dashboard_v1/proto/dashboard.proto\x1a\x1bgoogle/protobuf/empty.proto\x1a google/protobuf/field_mask.proto\x1a\x17google/api/client.proto"p\n\x16\x43reateDashboardRequest\x12\x13\n\x06parent\x18\x01 \x01(\tB\x03\xe0\x41\x02\x12\x41\n\tdashboard\x18\x02 \x01(\x0b\x32).google.monitoring.dashboard.v1.DashboardB\x03\xe0\x41\x02"\x83\x01\n\x15ListDashboardsRequest\x12\x43\n\x06parent\x18\x01 \x01(\tB3\xe0\x41\x02\xfa\x41-\n+cloudresourcemanager.googleapis.com/Project\x12\x11\n\tpage_size\x18\x02 \x01(\x05\x12\x12\n\npage_token\x18\x03 \x01(\t"p\n\x16ListDashboardsResponse\x12=\n\ndashboards\x18\x01 \x03(\x0b\x32).google.monitoring.dashboard.v1.Dashboard\x12\x17\n\x0fnext_page_token\x18\x02 \x01(\t"P\n\x13GetDashboardRequest\x12\x39\n\x04name\x18\x01 \x01(\tB+\xe0\x41\x02\xfa\x41%\n#monitoring.googleapis.com/Dashboard"S\n\x16\x44\x65leteDashboardRequest\x12\x39\n\x04name\x18\x01 \x01(\tB+\xe0\x41\x02\xfa\x41%\n#monitoring.googleapis.com/Dashboard"[\n\x16UpdateDashboardRequest\x12\x41\n\tdashboard\x18\x01 \x01(\x0b\x32).google.monitoring.dashboard.v1.DashboardB\x03\xe0\x41\x02\x32\xb1\x08\n\x11\x44\x61shboardsService\x12\xab\x01\n\x0f\x43reateDashboard\x12\x36.google.monitoring.dashboard.v1.CreateDashboardRequest\x1a).google.monitoring.dashboard.v1.Dashboard"5\x82\xd3\xe4\x93\x02/""/v1/{parent=projects/*}/dashboards:\tdashboard\x12\xab\x01\n\x0eListDashboards\x12\x35.google.monitoring.dashboard.v1.ListDashboardsRequest\x1a\x36.google.monitoring.dashboard.v1.ListDashboardsResponse"*\x82\xd3\xe4\x93\x02$\x12"/v1/{parent=projects/*}/dashboards\x12\x9a\x01\n\x0cGetDashboard\x12\x33.google.monitoring.dashboard.v1.GetDashboardRequest\x1a).google.monitoring.dashboard.v1.Dashboard"*\x82\xd3\xe4\x93\x02$\x12"/v1/{name=projects/*/dashboards/*}\x12\x8d\x01\n\x0f\x44\x65leteDashboard\x12\x36.google.monitoring.dashboard.v1.DeleteDashboardRequest\x1a\x16.google.protobuf.Empty"*\x82\xd3\xe4\x93\x02$*"/v1/{name=projects/*/dashboards/*}\x12\xb5\x01\n\x0fUpdateDashboard\x12\x36.google.monitoring.dashboard.v1.UpdateDashboardRequest\x1a).google.monitoring.dashboard.v1.Dashboard"?\x82\xd3\xe4\x93\x02\x39\x32,/v1/{dashboard.name=projects/*/dashboards/*}:\tdashboard\x1a\xda\x01\xca\x41\x19monitoring.googleapis.com\xd2\x41\xba\x01https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/monitoring,https://www.googleapis.com/auth/monitoring.read,https://www.googleapis.com/auth/monitoring.writeB\xb2\x01\n"com.google.monitoring.dashboard.v1B\x16\x44\x61shboardsServiceProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
     dependencies=[
         google_dot_api_dot_annotations__pb2.DESCRIPTOR,
         google_dot_api_dot_field__behavior__pb2.DESCRIPTOR,
+        google_dot_api_dot_resource__pb2.DESCRIPTOR,
         google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_dashboard__pb2.DESCRIPTOR,
         google_dot_protobuf_dot_empty__pb2.DESCRIPTOR,
         google_dot_protobuf_dot_field__mask__pb2.DESCRIPTOR,
@@ -110,8 +112,8 @@ _CREATEDASHBOARDREQUEST = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=314,
-    serialized_end=426,
+    serialized_start=341,
+    serialized_end=453,
 )
 
 
@@ -138,7 +140,7 @@ _LISTDASHBOARDSREQUEST = _descriptor.Descriptor(
             containing_type=None,
             is_extension=False,
             extension_scope=None,
-            serialized_options=b"\340A\002",
+            serialized_options=b"\340A\002\372A-\n+cloudresourcemanager.googleapis.com/Project",
             file=DESCRIPTOR,
             create_key=_descriptor._internal_create_key,
         ),
@@ -189,8 +191,8 @@ _LISTDASHBOARDSREQUEST = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=428,
-    serialized_end=511,
+    serialized_start=456,
+    serialized_end=587,
 )
 
 
@@ -249,8 +251,8 @@ _LISTDASHBOARDSRESPONSE = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=513,
-    serialized_end=625,
+    serialized_start=589,
+    serialized_end=701,
 )
 
 
@@ -277,7 +279,7 @@ _GETDASHBOARDREQUEST = _descriptor.Descriptor(
             containing_type=None,
             is_extension=False,
             extension_scope=None,
-            serialized_options=b"\340A\002",
+            serialized_options=b"\340A\002\372A%\n#monitoring.googleapis.com/Dashboard",
             file=DESCRIPTOR,
             create_key=_descriptor._internal_create_key,
         ),
@@ -290,8 +292,8 @@ _GETDASHBOARDREQUEST = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=627,
-    serialized_end=667,
+    serialized_start=703,
+    serialized_end=783,
 )
 
 
@@ -318,7 +320,7 @@ _DELETEDASHBOARDREQUEST = _descriptor.Descriptor(
             containing_type=None,
             is_extension=False,
             extension_scope=None,
-            serialized_options=b"\340A\002",
+            serialized_options=b"\340A\002\372A%\n#monitoring.googleapis.com/Dashboard",
             file=DESCRIPTOR,
             create_key=_descriptor._internal_create_key,
         ),
@@ -331,8 +333,8 @@ _DELETEDASHBOARDREQUEST = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=669,
-    serialized_end=712,
+    serialized_start=785,
+    serialized_end=868,
 )
 
 
@@ -372,8 +374,8 @@ _UPDATEDASHBOARDREQUEST = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=714,
-    serialized_end=805,
+    serialized_start=870,
+    serialized_end=961,
 )
 
 _CREATEDASHBOARDREQUEST.fields_by_name[
@@ -409,8 +411,9 @@ CreateDashboardRequest = _reflection.GeneratedProtocolMessageType(
   Attributes:
       parent:
           Required. The project on which to execute the request. The
-          format is ``"projects/{project_id_or_number}"``. The
-          {project_id_or_number} must match the dashboard resource name.
+          format is:  ::     projects/[PROJECT_ID_OR_NUMBER]  The
+          ``[PROJECT_ID_OR_NUMBER]`` must match the dashboard resource
+          name.
       dashboard:
           Required. The initial dashboard specification.
   """,
@@ -428,9 +431,8 @@ ListDashboardsRequest = _reflection.GeneratedProtocolMessageType(
         "__doc__": """The ``ListDashboards`` request.
   Attributes:
       parent:
-          Required. The scope of the dashboards to list. A project scope
-          must be specified in the form of
-          ``"projects/{project_id_or_number}"``.
+          Required. The scope of the dashboards to list. The format is:
+          ::     projects/[PROJECT_ID_OR_NUMBER]
       page_size:
           A positive number that is the maximum number of results to
           return. If unspecified, a default of 1000 is used.
@@ -458,7 +460,7 @@ ListDashboardsResponse = _reflection.GeneratedProtocolMessageType(
       next_page_token:
           If there are more results than have been returned, then this
           field is set to a non-empty value. To see the additional
-          results, use that value as ``pageToken`` in the next call to
+          results, use that value as ``page_token`` in the next call to
           this method.
   """,
         # @@protoc_insertion_point(class_scope:google.monitoring.dashboard.v1.ListDashboardsResponse)
@@ -476,9 +478,10 @@ GetDashboardRequest = _reflection.GeneratedProtocolMessageType(
   Attributes:
       name:
           Required. The resource name of the Dashboard. The format is
-          one of ``"dashboards/{dashboard_id}"`` (for system dashboards)
-          or ``"projects/{project_id_or_number}/dashboards/{dashboard_id
-          }"`` (for custom dashboards).
+          one of:  -  ``dashboards/[DASHBOARD_ID]`` (for system
+          dashboards) -
+          ``projects/[PROJECT_ID_OR_NUMBER]/dashboards/[DASHBOARD_ID]``
+          (for    custom dashboards).
   """,
         # @@protoc_insertion_point(class_scope:google.monitoring.dashboard.v1.GetDashboardRequest)
     },
@@ -494,8 +497,9 @@ DeleteDashboardRequest = _reflection.GeneratedProtocolMessageType(
         "__doc__": """The ``DeleteDashboard`` request.
   Attributes:
       name:
-          Required. The resource name of the Dashboard. The format is
-          ``"projects/{project_id_or_number}/dashboards/{dashboard_id}"``.
+          Required. The resource name of the Dashboard. The format is:
+          ::
+          projects/[PROJECT_ID_OR_NUMBER]/dashboards/[DASHBOARD_ID]
   """,
         # @@protoc_insertion_point(class_scope:google.monitoring.dashboard.v1.DeleteDashboardRequest)
     },
@@ -535,8 +539,8 @@ _DASHBOARDSSERVICE = _descriptor.ServiceDescriptor(
     index=0,
     serialized_options=b"\312A\031monitoring.googleapis.com\322A\272\001https://www.googleapis.com/auth/cloud-platform,https://www.googleapis.com/auth/monitoring,https://www.googleapis.com/auth/monitoring.read,https://www.googleapis.com/auth/monitoring.write",
     create_key=_descriptor._internal_create_key,
-    serialized_start=808,
-    serialized_end=1881,
+    serialized_start=964,
+    serialized_end=2037,
     methods=[
         _descriptor.MethodDescriptor(
             name="CreateDashboard",

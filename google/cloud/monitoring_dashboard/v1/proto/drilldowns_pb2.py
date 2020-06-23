@@ -27,13 +27,21 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from google.cloud.monitoring_dashboard.v1.proto import (
+    common_pb2 as google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_common__pb2,
+)
+
+
 DESCRIPTOR = _descriptor.FileDescriptor(
     name="google/cloud/monitoring_dashboard_v1/proto/drilldowns.proto",
     package="google.monitoring.dashboard.v1",
     syntax="proto3",
     serialized_options=b'\n"com.google.monitoring.dashboard.v1B\017DrilldownsProtoP\001ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\352\002(Google::Cloud::Monitoring::Dashboard::V1',
     create_key=_descriptor._internal_create_key,
-    serialized_pb=b'\n;google/cloud/monitoring_dashboard_v1/proto/drilldowns.proto\x12\x1egoogle.monitoring.dashboard.v1B\xab\x01\n"com.google.monitoring.dashboard.v1B\x0f\x44rilldownsProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
+    serialized_pb=b'\n;google/cloud/monitoring_dashboard_v1/proto/drilldowns.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x37google/cloud/monitoring_dashboard_v1/proto/common.protoB\xab\x01\n"com.google.monitoring.dashboard.v1B\x0f\x44rilldownsProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
+    dependencies=[
+        google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_common__pb2.DESCRIPTOR,
+    ],
 )
 
 

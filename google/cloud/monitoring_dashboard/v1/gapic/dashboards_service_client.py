@@ -28,6 +28,7 @@ import google.api_core.gapic_v1.method
 import google.api_core.gapic_v1.routing_header
 import google.api_core.grpc_helpers
 import google.api_core.page_iterator
+import google.api_core.path_template
 import grpc
 
 from google.cloud.monitoring_dashboard.v1.gapic import dashboards_service_client_config
@@ -78,6 +79,22 @@ class DashboardsServiceClient(object):
         return cls(*args, **kwargs)
 
     from_service_account_json = from_service_account_file
+
+    @classmethod
+    def dashboard_path(cls, project, dashboard):
+        """Return a fully-qualified dashboard string."""
+        return google.api_core.path_template.expand(
+            "projects/{project}/dashboards/{dashboard}",
+            project=project,
+            dashboard=dashboard,
+        )
+
+    @classmethod
+    def project_path(cls, project):
+        """Return a fully-qualified project string."""
+        return google.api_core.path_template.expand(
+            "projects/{project}", project=project,
+        )
 
     def __init__(
         self,
@@ -221,9 +238,14 @@ class DashboardsServiceClient(object):
             >>> response = client.create_dashboard(parent, dashboard)
 
         Args:
-            parent (str): Required. The project on which to execute the request. The format is
-                ``"projects/{project_id_or_number}"``. The {project_id_or_number} must
-                match the dashboard resource name.
+            parent (str): Required. The project on which to execute the request. The format
+                is:
+
+                ::
+
+                    projects/[PROJECT_ID_OR_NUMBER]
+
+                The ``[PROJECT_ID_OR_NUMBER]`` must match the dashboard resource name.
             dashboard (Union[dict, ~google.cloud.monitoring_dashboard.v1.types.Dashboard]): Required. The initial dashboard specification.
 
                 If a dict is provided, it must be of the same form as the protobuf
@@ -298,8 +320,7 @@ class DashboardsServiceClient(object):
             >>>
             >>> client = v1.DashboardsServiceClient()
             >>>
-            >>> # TODO: Initialize `parent`:
-            >>> parent = ''
+            >>> parent = client.project_path('[PROJECT]')
             >>>
             >>> # Iterate over all results
             >>> for element in client.list_dashboards(parent):
@@ -316,8 +337,11 @@ class DashboardsServiceClient(object):
             ...         pass
 
         Args:
-            parent (str): Required. The scope of the dashboards to list. A project scope must
-                be specified in the form of ``"projects/{project_id_or_number}"``.
+            parent (str): Required. The scope of the dashboards to list. The format is:
+
+                ::
+
+                    projects/[PROJECT_ID_OR_NUMBER]
             page_size (int): The maximum number of resources contained in the
                 underlying API response. If page streaming is performed per-
                 resource, this parameter does not affect the return value. If page
@@ -406,16 +430,16 @@ class DashboardsServiceClient(object):
             >>>
             >>> client = v1.DashboardsServiceClient()
             >>>
-            >>> # TODO: Initialize `name`:
-            >>> name = ''
+            >>> name = client.dashboard_path('[PROJECT]', '[DASHBOARD]')
             >>>
             >>> response = client.get_dashboard(name)
 
         Args:
-            name (str): Required. The resource name of the Dashboard. The format is one of
-                ``"dashboards/{dashboard_id}"`` (for system dashboards) or
-                ``"projects/{project_id_or_number}/dashboards/{dashboard_id}"`` (for
-                custom dashboards).
+            name (str): Required. The resource name of the Dashboard. The format is one of:
+
+                -  ``dashboards/[DASHBOARD_ID]`` (for system dashboards)
+                -  ``projects/[PROJECT_ID_OR_NUMBER]/dashboards/[DASHBOARD_ID]`` (for
+                   custom dashboards).
             retry (Optional[google.api_core.retry.Retry]):  A retry object used
                 to retry requests. If ``None`` is specified, requests will
                 be retried using a default configuration.
@@ -483,14 +507,16 @@ class DashboardsServiceClient(object):
             >>>
             >>> client = v1.DashboardsServiceClient()
             >>>
-            >>> # TODO: Initialize `name`:
-            >>> name = ''
+            >>> name = client.dashboard_path('[PROJECT]', '[DASHBOARD]')
             >>>
             >>> client.delete_dashboard(name)
 
         Args:
-            name (str): Required. The resource name of the Dashboard. The format is
-                ``"projects/{project_id_or_number}/dashboards/{dashboard_id}"``.
+            name (str): Required. The resource name of the Dashboard. The format is:
+
+                ::
+
+                    projects/[PROJECT_ID_OR_NUMBER]/dashboards/[DASHBOARD_ID]
             retry (Optional[google.api_core.retry.Retry]):  A retry object used
                 to retry requests. If ``None`` is specified, requests will
                 be retried using a default configuration.

@@ -40,7 +40,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     syntax="proto3",
     serialized_options=b'\n"com.google.monitoring.dashboard.v1B\014MetricsProtoP\001ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\352\002(Google::Cloud::Monitoring::Dashboard::V1',
     create_key=_descriptor._internal_create_key,
-    serialized_pb=b'\n8google/cloud/monitoring_dashboard_v1/proto/metrics.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x1fgoogle/api/field_behavior.proto\x1a\x37google/cloud/monitoring_dashboard_v1/proto/common.proto"\xdd\x01\n\x0fTimeSeriesQuery\x12N\n\x12time_series_filter\x18\x01 \x01(\x0b\x32\x30.google.monitoring.dashboard.v1.TimeSeriesFilterH\x00\x12Y\n\x18time_series_filter_ratio\x18\x02 \x01(\x0b\x32\x35.google.monitoring.dashboard.v1.TimeSeriesFilterRatioH\x00\x12\x15\n\runit_override\x18\x05 \x01(\tB\x08\n\x06source"\xba\x02\n\x10TimeSeriesFilter\x12\x13\n\x06\x66ilter\x18\x01 \x01(\tB\x03\xe0\x41\x02\x12@\n\x0b\x61ggregation\x18\x02 \x01(\x0b\x32+.google.monitoring.dashboard.v1.Aggregation\x12W\n\x17pick_time_series_filter\x18\x04 \x01(\x0b\x32\x34.google.monitoring.dashboard.v1.PickTimeSeriesFilterH\x00\x12\x65\n\x1estatistical_time_series_filter\x18\x05 \x01(\x0b\x32;.google.monitoring.dashboard.v1.StatisticalTimeSeriesFilterH\x00\x42\x0f\n\routput_filter"\xc2\x04\n\x15TimeSeriesFilterRatio\x12R\n\tnumerator\x18\x01 \x01(\x0b\x32?.google.monitoring.dashboard.v1.TimeSeriesFilterRatio.RatioPart\x12T\n\x0b\x64\x65nominator\x18\x02 \x01(\x0b\x32?.google.monitoring.dashboard.v1.TimeSeriesFilterRatio.RatioPart\x12J\n\x15secondary_aggregation\x18\x03 \x01(\x0b\x32+.google.monitoring.dashboard.v1.Aggregation\x12W\n\x17pick_time_series_filter\x18\x04 \x01(\x0b\x32\x34.google.monitoring.dashboard.v1.PickTimeSeriesFilterH\x00\x12\x65\n\x1estatistical_time_series_filter\x18\x05 \x01(\x0b\x32;.google.monitoring.dashboard.v1.StatisticalTimeSeriesFilterH\x00\x1a\x62\n\tRatioPart\x12\x13\n\x06\x66ilter\x18\x01 \x01(\tB\x03\xe0\x41\x02\x12@\n\x0b\x61ggregation\x18\x02 \x01(\x0b\x32+.google.monitoring.dashboard.v1.AggregationB\x0f\n\routput_filter"\xa4\x02\n\tThreshold\x12\r\n\x05label\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x01\x12>\n\x05\x63olor\x18\x03 \x01(\x0e\x32/.google.monitoring.dashboard.v1.Threshold.Color\x12\x46\n\tdirection\x18\x04 \x01(\x0e\x32\x33.google.monitoring.dashboard.v1.Threshold.Direction"3\n\x05\x43olor\x12\x15\n\x11\x43OLOR_UNSPECIFIED\x10\x00\x12\n\n\x06YELLOW\x10\x04\x12\x07\n\x03RED\x10\x06"<\n\tDirection\x12\x19\n\x15\x44IRECTION_UNSPECIFIED\x10\x00\x12\t\n\x05\x41\x42OVE\x10\x01\x12\t\n\x05\x42\x45LOW\x10\x02*Q\n\x0eSparkChartType\x12 \n\x1cSPARK_CHART_TYPE_UNSPECIFIED\x10\x00\x12\x0e\n\nSPARK_LINE\x10\x01\x12\r\n\tSPARK_BAR\x10\x02\x42\xa8\x01\n"com.google.monitoring.dashboard.v1B\x0cMetricsProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
+    serialized_pb=b'\n8google/cloud/monitoring_dashboard_v1/proto/metrics.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x1fgoogle/api/field_behavior.proto\x1a\x37google/cloud/monitoring_dashboard_v1/proto/common.proto"\x83\x02\n\x0fTimeSeriesQuery\x12N\n\x12time_series_filter\x18\x01 \x01(\x0b\x32\x30.google.monitoring.dashboard.v1.TimeSeriesFilterH\x00\x12Y\n\x18time_series_filter_ratio\x18\x02 \x01(\x0b\x32\x35.google.monitoring.dashboard.v1.TimeSeriesFilterRatioH\x00\x12$\n\x1atime_series_query_language\x18\x03 \x01(\tH\x00\x12\x15\n\runit_override\x18\x05 \x01(\tB\x08\n\x06source"\x8a\x03\n\x10TimeSeriesFilter\x12\x13\n\x06\x66ilter\x18\x01 \x01(\tB\x03\xe0\x41\x02\x12@\n\x0b\x61ggregation\x18\x02 \x01(\x0b\x32+.google.monitoring.dashboard.v1.Aggregation\x12J\n\x15secondary_aggregation\x18\x03 \x01(\x0b\x32+.google.monitoring.dashboard.v1.Aggregation\x12W\n\x17pick_time_series_filter\x18\x04 \x01(\x0b\x32\x34.google.monitoring.dashboard.v1.PickTimeSeriesFilterH\x00\x12i\n\x1estatistical_time_series_filter\x18\x05 \x01(\x0b\x32;.google.monitoring.dashboard.v1.StatisticalTimeSeriesFilterB\x02\x18\x01H\x00\x42\x0f\n\routput_filter"\xc6\x04\n\x15TimeSeriesFilterRatio\x12R\n\tnumerator\x18\x01 \x01(\x0b\x32?.google.monitoring.dashboard.v1.TimeSeriesFilterRatio.RatioPart\x12T\n\x0b\x64\x65nominator\x18\x02 \x01(\x0b\x32?.google.monitoring.dashboard.v1.TimeSeriesFilterRatio.RatioPart\x12J\n\x15secondary_aggregation\x18\x03 \x01(\x0b\x32+.google.monitoring.dashboard.v1.Aggregation\x12W\n\x17pick_time_series_filter\x18\x04 \x01(\x0b\x32\x34.google.monitoring.dashboard.v1.PickTimeSeriesFilterH\x00\x12i\n\x1estatistical_time_series_filter\x18\x05 \x01(\x0b\x32;.google.monitoring.dashboard.v1.StatisticalTimeSeriesFilterB\x02\x18\x01H\x00\x1a\x62\n\tRatioPart\x12\x13\n\x06\x66ilter\x18\x01 \x01(\tB\x03\xe0\x41\x02\x12@\n\x0b\x61ggregation\x18\x02 \x01(\x0b\x32+.google.monitoring.dashboard.v1.AggregationB\x0f\n\routput_filter"\xa4\x02\n\tThreshold\x12\r\n\x05label\x18\x01 \x01(\t\x12\r\n\x05value\x18\x02 \x01(\x01\x12>\n\x05\x63olor\x18\x03 \x01(\x0e\x32/.google.monitoring.dashboard.v1.Threshold.Color\x12\x46\n\tdirection\x18\x04 \x01(\x0e\x32\x33.google.monitoring.dashboard.v1.Threshold.Direction"3\n\x05\x43olor\x12\x15\n\x11\x43OLOR_UNSPECIFIED\x10\x00\x12\n\n\x06YELLOW\x10\x04\x12\x07\n\x03RED\x10\x06"<\n\tDirection\x12\x19\n\x15\x44IRECTION_UNSPECIFIED\x10\x00\x12\t\n\x05\x41\x42OVE\x10\x01\x12\t\n\x05\x42\x45LOW\x10\x02*Q\n\x0eSparkChartType\x12 \n\x1cSPARK_CHART_TYPE_UNSPECIFIED\x10\x00\x12\x0e\n\nSPARK_LINE\x10\x01\x12\r\n\tSPARK_BAR\x10\x02\x42\xa8\x01\n"com.google.monitoring.dashboard.v1B\x0cMetricsProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
     dependencies=[
         google_dot_api_dot_field__behavior__pb2.DESCRIPTOR,
         google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_common__pb2.DESCRIPTOR,
@@ -81,8 +81,8 @@ _SPARKCHARTTYPE = _descriptor.EnumDescriptor(
     ],
     containing_type=None,
     serialized_options=None,
-    serialized_start=1599,
-    serialized_end=1680,
+    serialized_start=1721,
+    serialized_end=1802,
 )
 _sym_db.RegisterEnumDescriptor(_SPARKCHARTTYPE)
 
@@ -126,8 +126,8 @@ _THRESHOLD_COLOR = _descriptor.EnumDescriptor(
     ],
     containing_type=None,
     serialized_options=None,
-    serialized_start=1484,
-    serialized_end=1535,
+    serialized_start=1606,
+    serialized_end=1657,
 )
 _sym_db.RegisterEnumDescriptor(_THRESHOLD_COLOR)
 
@@ -165,8 +165,8 @@ _THRESHOLD_DIRECTION = _descriptor.EnumDescriptor(
     ],
     containing_type=None,
     serialized_options=None,
-    serialized_start=1537,
-    serialized_end=1597,
+    serialized_start=1659,
+    serialized_end=1719,
 )
 _sym_db.RegisterEnumDescriptor(_THRESHOLD_DIRECTION)
 
@@ -218,9 +218,28 @@ _TIMESERIESQUERY = _descriptor.Descriptor(
             create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
+            name="time_series_query_language",
+            full_name="google.monitoring.dashboard.v1.TimeSeriesQuery.time_series_query_language",
+            index=2,
+            number=3,
+            type=9,
+            cpp_type=9,
+            label=1,
+            has_default_value=False,
+            default_value=b"".decode("utf-8"),
+            message_type=None,
+            enum_type=None,
+            containing_type=None,
+            is_extension=False,
+            extension_scope=None,
+            serialized_options=None,
+            file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
+        ),
+        _descriptor.FieldDescriptor(
             name="unit_override",
             full_name="google.monitoring.dashboard.v1.TimeSeriesQuery.unit_override",
-            index=2,
+            index=3,
             number=5,
             type=9,
             cpp_type=9,
@@ -255,7 +274,7 @@ _TIMESERIESQUERY = _descriptor.Descriptor(
         ),
     ],
     serialized_start=183,
-    serialized_end=404,
+    serialized_end=442,
 )
 
 
@@ -306,9 +325,28 @@ _TIMESERIESFILTER = _descriptor.Descriptor(
             create_key=_descriptor._internal_create_key,
         ),
         _descriptor.FieldDescriptor(
+            name="secondary_aggregation",
+            full_name="google.monitoring.dashboard.v1.TimeSeriesFilter.secondary_aggregation",
+            index=2,
+            number=3,
+            type=11,
+            cpp_type=10,
+            label=1,
+            has_default_value=False,
+            default_value=None,
+            message_type=None,
+            enum_type=None,
+            containing_type=None,
+            is_extension=False,
+            extension_scope=None,
+            serialized_options=None,
+            file=DESCRIPTOR,
+            create_key=_descriptor._internal_create_key,
+        ),
+        _descriptor.FieldDescriptor(
             name="pick_time_series_filter",
             full_name="google.monitoring.dashboard.v1.TimeSeriesFilter.pick_time_series_filter",
-            index=2,
+            index=3,
             number=4,
             type=11,
             cpp_type=10,
@@ -327,7 +365,7 @@ _TIMESERIESFILTER = _descriptor.Descriptor(
         _descriptor.FieldDescriptor(
             name="statistical_time_series_filter",
             full_name="google.monitoring.dashboard.v1.TimeSeriesFilter.statistical_time_series_filter",
-            index=3,
+            index=4,
             number=5,
             type=11,
             cpp_type=10,
@@ -339,7 +377,7 @@ _TIMESERIESFILTER = _descriptor.Descriptor(
             containing_type=None,
             is_extension=False,
             extension_scope=None,
-            serialized_options=None,
+            serialized_options=b"\030\001",
             file=DESCRIPTOR,
             create_key=_descriptor._internal_create_key,
         ),
@@ -361,8 +399,8 @@ _TIMESERIESFILTER = _descriptor.Descriptor(
             fields=[],
         ),
     ],
-    serialized_start=407,
-    serialized_end=721,
+    serialized_start=445,
+    serialized_end=839,
 )
 
 
@@ -421,8 +459,8 @@ _TIMESERIESFILTERRATIO_RATIOPART = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=1187,
-    serialized_end=1285,
+    serialized_start=1309,
+    serialized_end=1407,
 )
 
 _TIMESERIESFILTERRATIO = _descriptor.Descriptor(
@@ -524,7 +562,7 @@ _TIMESERIESFILTERRATIO = _descriptor.Descriptor(
             containing_type=None,
             is_extension=False,
             extension_scope=None,
-            serialized_options=None,
+            serialized_options=b"\030\001",
             file=DESCRIPTOR,
             create_key=_descriptor._internal_create_key,
         ),
@@ -546,8 +584,8 @@ _TIMESERIESFILTERRATIO = _descriptor.Descriptor(
             fields=[],
         ),
     ],
-    serialized_start=724,
-    serialized_end=1302,
+    serialized_start=842,
+    serialized_end=1424,
 )
 
 
@@ -644,8 +682,8 @@ _THRESHOLD = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=1305,
-    serialized_end=1597,
+    serialized_start=1427,
+    serialized_end=1719,
 )
 
 _TIMESERIESQUERY.fields_by_name["time_series_filter"].message_type = _TIMESERIESFILTER
@@ -664,8 +702,19 @@ _TIMESERIESQUERY.oneofs_by_name["source"].fields.append(
 _TIMESERIESQUERY.fields_by_name[
     "time_series_filter_ratio"
 ].containing_oneof = _TIMESERIESQUERY.oneofs_by_name["source"]
+_TIMESERIESQUERY.oneofs_by_name["source"].fields.append(
+    _TIMESERIESQUERY.fields_by_name["time_series_query_language"]
+)
+_TIMESERIESQUERY.fields_by_name[
+    "time_series_query_language"
+].containing_oneof = _TIMESERIESQUERY.oneofs_by_name["source"]
 _TIMESERIESFILTER.fields_by_name[
     "aggregation"
+].message_type = (
+    google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_common__pb2._AGGREGATION
+)
+_TIMESERIESFILTER.fields_by_name[
+    "secondary_aggregation"
 ].message_type = (
     google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_common__pb2._AGGREGATION
 )
@@ -756,6 +805,8 @@ TimeSeriesQuery = _reflection.GeneratedProtocolMessageType(
           Filter parameters to fetch time series.
       time_series_filter_ratio:
           Parameters to fetch a ratio between two time series filters.
+      time_series_query_language:
+          A query used to fetch time series.
       unit_override:
           The unit of data contained in fetched time series. If non-
           empty, this unit will override any unit that accompanies
@@ -787,12 +838,15 @@ TimeSeriesFilter = _reflection.GeneratedProtocolMessageType(
           By default, the raw time series data is returned. Use this
           field to combine multiple time series for different views of
           the data.
+      secondary_aggregation:
+          Apply a second aggregation after ``aggregation`` is applied.
       output_filter:
           Selects an optional time series filter.
       pick_time_series_filter:
           Ranking based time series filter.
       statistical_time_series_filter:
-          Statistics based time series filter.
+          Statistics based time series filter. Note: This field is
+          deprecated and completely ignored by the API.
   """,
         # @@protoc_insertion_point(class_scope:google.monitoring.dashboard.v1.TimeSeriesFilter)
     },
@@ -842,7 +896,8 @@ TimeSeriesFilterRatio = _reflection.GeneratedProtocolMessageType(
       pick_time_series_filter:
           Ranking based time series filter.
       statistical_time_series_filter:
-          Statistics based time series filter.
+          Statistics based time series filter. Note: This field is
+          deprecated and completely ignored by the API.
   """,
         # @@protoc_insertion_point(class_scope:google.monitoring.dashboard.v1.TimeSeriesFilterRatio)
     },
@@ -878,5 +933,7 @@ _sym_db.RegisterMessage(Threshold)
 
 DESCRIPTOR._options = None
 _TIMESERIESFILTER.fields_by_name["filter"]._options = None
+_TIMESERIESFILTER.fields_by_name["statistical_time_series_filter"]._options = None
 _TIMESERIESFILTERRATIO_RATIOPART.fields_by_name["filter"]._options = None
+_TIMESERIESFILTERRATIO.fields_by_name["statistical_time_series_filter"]._options = None
 # @@protoc_insertion_point(module_scope)

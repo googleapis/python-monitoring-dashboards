@@ -27,6 +27,7 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
+from google.api import field_behavior_pb2 as google_dot_api_dot_field__behavior__pb2
 from google.cloud.monitoring_dashboard.v1.proto import (
     metrics_pb2 as google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_metrics__pb2,
 )
@@ -39,8 +40,9 @@ DESCRIPTOR = _descriptor.FileDescriptor(
     syntax="proto3",
     serialized_options=b'\n"com.google.monitoring.dashboard.v1B\016ScorecardProtoP\001ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\352\002(Google::Cloud::Monitoring::Dashboard::V1',
     create_key=_descriptor._internal_create_key,
-    serialized_pb=b'\n:google/cloud/monitoring_dashboard_v1/proto/scorecard.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x38google/cloud/monitoring_dashboard_v1/proto/metrics.proto\x1a\x1egoogle/protobuf/duration.proto"\x91\x04\n\tScorecard\x12J\n\x11time_series_query\x18\x01 \x01(\x0b\x32/.google.monitoring.dashboard.v1.TimeSeriesQuery\x12I\n\ngauge_view\x18\x04 \x01(\x0b\x32\x33.google.monitoring.dashboard.v1.Scorecard.GaugeViewH\x00\x12T\n\x10spark_chart_view\x18\x05 \x01(\x0b\x32\x38.google.monitoring.dashboard.v1.Scorecard.SparkChartViewH\x00\x12=\n\nthresholds\x18\x06 \x03(\x0b\x32).google.monitoring.dashboard.v1.Threshold\x1a\x35\n\tGaugeView\x12\x13\n\x0blower_bound\x18\x01 \x01(\x01\x12\x13\n\x0bupper_bound\x18\x02 \x01(\x01\x1a\x93\x01\n\x0eSparkChartView\x12H\n\x10spark_chart_type\x18\x01 \x01(\x0e\x32..google.monitoring.dashboard.v1.SparkChartType\x12\x37\n\x14min_alignment_period\x18\x02 \x01(\x0b\x32\x19.google.protobuf.DurationB\x0b\n\tdata_viewB\xaa\x01\n"com.google.monitoring.dashboard.v1B\x0eScorecardProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
+    serialized_pb=b'\n:google/cloud/monitoring_dashboard_v1/proto/scorecard.proto\x12\x1egoogle.monitoring.dashboard.v1\x1a\x1fgoogle/api/field_behavior.proto\x1a\x38google/cloud/monitoring_dashboard_v1/proto/metrics.proto\x1a\x1egoogle/protobuf/duration.proto"\x9b\x04\n\tScorecard\x12O\n\x11time_series_query\x18\x01 \x01(\x0b\x32/.google.monitoring.dashboard.v1.TimeSeriesQueryB\x03\xe0\x41\x02\x12I\n\ngauge_view\x18\x04 \x01(\x0b\x32\x33.google.monitoring.dashboard.v1.Scorecard.GaugeViewH\x00\x12T\n\x10spark_chart_view\x18\x05 \x01(\x0b\x32\x38.google.monitoring.dashboard.v1.Scorecard.SparkChartViewH\x00\x12=\n\nthresholds\x18\x06 \x03(\x0b\x32).google.monitoring.dashboard.v1.Threshold\x1a\x35\n\tGaugeView\x12\x13\n\x0blower_bound\x18\x01 \x01(\x01\x12\x13\n\x0bupper_bound\x18\x02 \x01(\x01\x1a\x98\x01\n\x0eSparkChartView\x12M\n\x10spark_chart_type\x18\x01 \x01(\x0e\x32..google.monitoring.dashboard.v1.SparkChartTypeB\x03\xe0\x41\x02\x12\x37\n\x14min_alignment_period\x18\x02 \x01(\x0b\x32\x19.google.protobuf.DurationB\x0b\n\tdata_viewB\xaa\x01\n"com.google.monitoring.dashboard.v1B\x0eScorecardProtoP\x01ZGgoogle.golang.org/genproto/googleapis/monitoring/dashboard/v1;dashboard\xea\x02(Google::Cloud::Monitoring::Dashboard::V1b\x06proto3',
     dependencies=[
+        google_dot_api_dot_field__behavior__pb2.DESCRIPTOR,
         google_dot_cloud_dot_monitoring__dashboard__v1_dot_proto_dot_metrics__pb2.DESCRIPTOR,
         google_dot_protobuf_dot_duration__pb2.DESCRIPTOR,
     ],
@@ -102,8 +104,8 @@ _SCORECARD_GAUGEVIEW = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=498,
-    serialized_end=551,
+    serialized_start=536,
+    serialized_end=589,
 )
 
 _SCORECARD_SPARKCHARTVIEW = _descriptor.Descriptor(
@@ -129,7 +131,7 @@ _SCORECARD_SPARKCHARTVIEW = _descriptor.Descriptor(
             containing_type=None,
             is_extension=False,
             extension_scope=None,
-            serialized_options=None,
+            serialized_options=b"\340A\002",
             file=DESCRIPTOR,
             create_key=_descriptor._internal_create_key,
         ),
@@ -161,8 +163,8 @@ _SCORECARD_SPARKCHARTVIEW = _descriptor.Descriptor(
     syntax="proto3",
     extension_ranges=[],
     oneofs=[],
-    serialized_start=554,
-    serialized_end=701,
+    serialized_start=592,
+    serialized_end=744,
 )
 
 _SCORECARD = _descriptor.Descriptor(
@@ -188,7 +190,7 @@ _SCORECARD = _descriptor.Descriptor(
             containing_type=None,
             is_extension=False,
             extension_scope=None,
-            serialized_options=None,
+            serialized_options=b"\340A\002",
             file=DESCRIPTOR,
             create_key=_descriptor._internal_create_key,
         ),
@@ -267,8 +269,8 @@ _SCORECARD = _descriptor.Descriptor(
             fields=[],
         ),
     ],
-    serialized_start=185,
-    serialized_end=714,
+    serialized_start=218,
+    serialized_end=757,
 )
 
 _SCORECARD_GAUGEVIEW.containing_type = _SCORECARD
@@ -344,7 +346,7 @@ Scorecard = _reflection.GeneratedProtocolMessageType(
     scorecard’s timeseries.
     Attributes:
         spark_chart_type:
-            The type of sparkchart to show in this chartView.
+            Required. The type of sparkchart to show in this chartView.
         min_alignment_period:
             The lower bound on data point frequency in the chart
             implemented by specifying the minimum alignment period to use
@@ -362,8 +364,8 @@ Scorecard = _reflection.GeneratedProtocolMessageType(
   relates to one or more thresholds.
   Attributes:
       time_series_query:
-          Fields for querying time series data from the Stackdriver
-          metrics API.
+          Required. Fields for querying time series data from the
+          Stackdriver metrics API.
       data_view:
           Defines the optional additional chart shown on the scorecard.
           If neither is included - then a default scorecard is shown.
@@ -400,4 +402,6 @@ _sym_db.RegisterMessage(Scorecard.SparkChartView)
 
 
 DESCRIPTOR._options = None
+_SCORECARD_SPARKCHARTVIEW.fields_by_name["spark_chart_type"]._options = None
+_SCORECARD.fields_by_name["time_series_query"]._options = None
 # @@protoc_insertion_point(module_scope)
