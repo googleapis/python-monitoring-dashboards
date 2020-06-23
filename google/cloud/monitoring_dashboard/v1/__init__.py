@@ -38,4 +38,8 @@ class DashboardsServiceClient(dashboards_service_client.DashboardsServiceClient)
     enums = enums
 
 
-__all__ = ("enums", "types", "DashboardsServiceClient")
+__all__ = (
+    "enums",
+    "types",
+    "DashboardsServiceClient",
+)
