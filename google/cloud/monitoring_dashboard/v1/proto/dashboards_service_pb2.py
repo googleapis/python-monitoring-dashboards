@@ -408,6 +408,7 @@ CreateDashboardRequest = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _CREATEDASHBOARDREQUEST,
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.dashboards_service_pb2",
         "__doc__": """The ``CreateDashboard`` request.
+  
   Attributes:
       parent:
           Required. The project on which to execute the request. The
@@ -429,6 +430,7 @@ ListDashboardsRequest = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _LISTDASHBOARDSREQUEST,
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.dashboards_service_pb2",
         "__doc__": """The ``ListDashboards`` request.
+  
   Attributes:
       parent:
           Required. The scope of the dashboards to list. The format is:
@@ -454,6 +456,7 @@ ListDashboardsResponse = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _LISTDASHBOARDSRESPONSE,
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.dashboards_service_pb2",
         "__doc__": """The ``ListDashboards`` request.
+  
   Attributes:
       dashboards:
           The list of requested dashboards.
@@ -475,6 +478,7 @@ GetDashboardRequest = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _GETDASHBOARDREQUEST,
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.dashboards_service_pb2",
         "__doc__": """The ``GetDashboard`` request.
+  
   Attributes:
       name:
           Required. The resource name of the Dashboard. The format is
@@ -495,6 +499,7 @@ DeleteDashboardRequest = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _DELETEDASHBOARDREQUEST,
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.dashboards_service_pb2",
         "__doc__": """The ``DeleteDashboard`` request.
+  
   Attributes:
       name:
           Required. The resource name of the Dashboard. The format is:
@@ -513,6 +518,7 @@ UpdateDashboardRequest = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _UPDATEDASHBOARDREQUEST,
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.dashboards_service_pb2",
         "__doc__": """The ``UpdateDashboard`` request.
+  
   Attributes:
       dashboard:
           Required. The dashboard that will replace the existing

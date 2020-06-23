@@ -566,6 +566,7 @@ XyChart = _reflection.GeneratedProtocolMessageType(
                 "DESCRIPTOR": _XYCHART_DATASET,
                 "__module__": "google.cloud.monitoring_dashboard.v1.proto.xychart_pb2",
                 "__doc__": """Groups a time series query definition with charting options.
+    
     Attributes:
         time_series_query:
             Required. Fields for querying time series data from the
@@ -596,6 +597,7 @@ XyChart = _reflection.GeneratedProtocolMessageType(
                 "DESCRIPTOR": _XYCHART_AXIS,
                 "__module__": "google.cloud.monitoring_dashboard.v1.proto.xychart_pb2",
                 "__doc__": """A chart axis.
+    
     Attributes:
         label:
             The label of the axis.
@@ -608,6 +610,7 @@ XyChart = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _XYCHART,
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.xychart_pb2",
         "__doc__": """A chart that displays data on a 2D (X and Y axes) plane.
+  
   Attributes:
       data_sets:
           Required. The data displayed in this chart.
@@ -640,6 +643,7 @@ ChartOptions = _reflection.GeneratedProtocolMessageType(
         "DESCRIPTOR": _CHARTOPTIONS,
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.xychart_pb2",
         "__doc__": """Options to control visual rendering of a chart.
+  
   Attributes:
       mode:
           The chart mode.

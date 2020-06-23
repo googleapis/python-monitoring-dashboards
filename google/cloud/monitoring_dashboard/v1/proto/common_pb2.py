@@ -765,6 +765,7 @@ Aggregation = _reflection.GeneratedProtocolMessageType(
   series data is still available for later drilldown. For more details,
   see `Filtering and aggregation
   <https://cloud.google.com/monitoring/api/v3/aggregation>`__.
+  
   Attributes:
       alignment_period:
           The ``alignment_period`` specifies a time interval, in
@@ -843,6 +844,7 @@ PickTimeSeriesFilter = _reflection.GeneratedProtocolMessageType(
   ``METHOD_MEAN``,\ ``direction`` is ``BOTTOM``, and ``num_time_series``
   is 3, then the 3 times series with the lowest mean values will pass
   through the filter.
+  
   Attributes:
       ranking_method:
           \ ``ranking_method`` is applied to each time series
@@ -868,6 +870,7 @@ StatisticalTimeSeriesFilter = _reflection.GeneratedProtocolMessageType(
         "__doc__": """A filter that ranks streams based on their statistical relation to
   other streams in a request. Note: This field is deprecated and
   completely ignored by the API.
+  
   Attributes:
       ranking_method:
           \ ``rankingMethod`` is applied to a set of time series, and

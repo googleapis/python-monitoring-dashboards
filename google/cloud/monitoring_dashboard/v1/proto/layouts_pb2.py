@@ -336,6 +336,7 @@ GridLayout = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.layouts_pb2",
         "__doc__": """A basic layout divides the available space into vertical columns of
   equal width and arranges a list of widgets using a row-first strategy.
+  
   Attributes:
       columns:
           The number of columns into which the view’s width is divided.
@@ -361,6 +362,7 @@ RowLayout = _reflection.GeneratedProtocolMessageType(
                 "DESCRIPTOR": _ROWLAYOUT_ROW,
                 "__module__": "google.cloud.monitoring_dashboard.v1.proto.layouts_pb2",
                 "__doc__": """Defines the layout properties and content for a row.
+    
     Attributes:
         weight:
             The relative weight of this row. The row weight is used to
@@ -377,6 +379,7 @@ RowLayout = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.layouts_pb2",
         "__doc__": """A simplified layout that divides the available space into rows and
   arranges a set of widgets horizontally in each row.
+  
   Attributes:
       rows:
           The rows of content to display.
@@ -398,6 +401,7 @@ ColumnLayout = _reflection.GeneratedProtocolMessageType(
                 "DESCRIPTOR": _COLUMNLAYOUT_COLUMN,
                 "__module__": "google.cloud.monitoring_dashboard.v1.proto.layouts_pb2",
                 "__doc__": """Defines the layout properties and content for a column.
+    
     Attributes:
         weight:
             The relative weight of this column. The column weight is used
@@ -414,6 +418,7 @@ ColumnLayout = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.layouts_pb2",
         "__doc__": """A simplified layout that divides the available space into vertical
   columns and arranges a set of widgets vertically in each column.
+  
   Attributes:
       columns:
           The columns of content to display.

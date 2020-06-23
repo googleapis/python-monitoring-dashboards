@@ -323,6 +323,7 @@ Scorecard = _reflection.GeneratedProtocolMessageType(
                 "__doc__": """A gauge chart shows where the current value sits within a pre-defined
     range. The upper and lower bounds should define the possible range of
     values for the scorecard’s query (inclusive).
+    
     Attributes:
         lower_bound:
             The lower bound for this gauge chart. The value of the chart
@@ -344,6 +345,7 @@ Scorecard = _reflection.GeneratedProtocolMessageType(
     or inline in text. This message contains the configuration for a
     sparkChart to show up on a Scorecard, showing recent trends of the
     scorecard’s timeseries.
+    
     Attributes:
         spark_chart_type:
             Required. The type of sparkchart to show in this chartView.
@@ -362,6 +364,7 @@ Scorecard = _reflection.GeneratedProtocolMessageType(
         "__module__": "google.cloud.monitoring_dashboard.v1.proto.scorecard_pb2",
         "__doc__": """A widget showing the latest value of a metric, and how this value
   relates to one or more thresholds.
+  
   Attributes:
       time_series_query:
           Required. Fields for querying time series data from the
