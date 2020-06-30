@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://www.github.com/googleapis/python-monitoring-dashboards/compare/v1.0.0...v1.1.0) (2020-06-30)
+
+
+### Features
+
+* add support for secondary aggregation and Monitoring Query Language ([#22](https://www.github.com/googleapis/python-monitoring-dashboards/issues/22)) ([8ed9094](https://www.github.com/googleapis/python-monitoring-dashboards/commit/8ed9094df80db87caa9852279be76d69783dc9c3))
+
 ## [1.0.0](https://www.github.com/googleapis/python-monitoring-dashboards/compare/v0.1.0...v1.0.0) (2020-05-19)
 
 
