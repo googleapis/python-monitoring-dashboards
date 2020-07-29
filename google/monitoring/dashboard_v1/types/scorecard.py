@@ -136,9 +136,13 @@ class Scorecard(proto.Message):
         proto.MESSAGE, number=1, message=metrics.TimeSeriesQuery,
     )
 
-    gauge_view = proto.Field(proto.MESSAGE, number=4, message=GaugeView,)
+    gauge_view = proto.Field(
+        proto.MESSAGE, number=4, oneof="data_view", message=GaugeView,
+    )
 
-    spark_chart_view = proto.Field(proto.MESSAGE, number=5, message=SparkChartView,)
+    spark_chart_view = proto.Field(
+        proto.MESSAGE, number=5, oneof="data_view", message=SparkChartView,
+    )
 
     thresholds = proto.RepeatedField(
         proto.MESSAGE, number=6, message=metrics.Threshold,

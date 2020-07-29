@@ -71,6 +71,7 @@ s.replace(
 s.replace(
     "google/**/*.py", "google-cloud-monitoring-dashboard", "google-cloud-monitoring-dashboards"
 )
+
 # ----------------------------------------------------------------------------
 # Add templated files
 # ----------------------------------------------------------------------------
@@ -83,5 +84,8 @@ s.move(templated_files, excludes=[".coveragerc"])  # microgenerator has a good .
 
 # TODO(busunkim): Use latest sphinx after microgenerator transition
 s.replace("noxfile.py", """['"]sphinx['"]""", '"sphinx<3.0.0"')
+# Temporarily disable warnings due to
+# https://github.com/googleapis/gapic-generator-python/issues/525
+s.replace("noxfile.py", '[\"\']-W[\"\']', '# "-W"')
 
 s.shell.run(["nox", "-s", "blacken"], hide_output=False)

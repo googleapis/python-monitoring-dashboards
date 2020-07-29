@@ -63,14 +63,14 @@ class TimeSeriesQuery(proto.Message):
     """
 
     time_series_filter = proto.Field(
-        proto.MESSAGE, number=1, message="TimeSeriesFilter",
+        proto.MESSAGE, number=1, oneof="source", message="TimeSeriesFilter",
     )
 
     time_series_filter_ratio = proto.Field(
-        proto.MESSAGE, number=2, message="TimeSeriesFilterRatio",
+        proto.MESSAGE, number=2, oneof="source", message="TimeSeriesFilterRatio",
     )
 
-    time_series_query_language = proto.Field(proto.STRING, number=3)
+    time_series_query_language = proto.Field(proto.STRING, number=3, oneof="source")
 
     unit_override = proto.Field(proto.STRING, number=5)
 
@@ -110,11 +110,17 @@ class TimeSeriesFilter(proto.Message):
     )
 
     pick_time_series_filter = proto.Field(
-        proto.MESSAGE, number=4, message=common.PickTimeSeriesFilter,
+        proto.MESSAGE,
+        number=4,
+        oneof="output_filter",
+        message=common.PickTimeSeriesFilter,
     )
 
     statistical_time_series_filter = proto.Field(
-        proto.MESSAGE, number=5, message=common.StatisticalTimeSeriesFilter,
+        proto.MESSAGE,
+        number=5,
+        oneof="output_filter",
+        message=common.StatisticalTimeSeriesFilter,
     )
 
 
@@ -169,11 +175,17 @@ class TimeSeriesFilterRatio(proto.Message):
     )
 
     pick_time_series_filter = proto.Field(
-        proto.MESSAGE, number=4, message=common.PickTimeSeriesFilter,
+        proto.MESSAGE,
+        number=4,
+        oneof="output_filter",
+        message=common.PickTimeSeriesFilter,
     )
 
     statistical_time_series_filter = proto.Field(
-        proto.MESSAGE, number=5, message=common.StatisticalTimeSeriesFilter,
+        proto.MESSAGE,
+        number=5,
+        oneof="output_filter",
+        message=common.StatisticalTimeSeriesFilter,
     )
 
 

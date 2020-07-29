@@ -17,14 +17,26 @@
 
 import abc
 import typing
+import pkg_resources
 
 from google import auth
 from google.api_core import exceptions  # type: ignore
+from google.api_core import gapic_v1  # type: ignore
 from google.auth import credentials  # type: ignore
 
 from google.monitoring.dashboard_v1.types import dashboard
 from google.monitoring.dashboard_v1.types import dashboards_service
 from google.protobuf import empty_pb2 as empty  # type: ignore
+
+
+try:
+    _client_info = gapic_v1.client_info.ClientInfo(
+        gapic_version=pkg_resources.get_distribution(
+            "google-monitoring-dashboard",
+        ).version,
+    )
+except pkg_resources.DistributionNotFound:
+    _client_info = gapic_v1.client_info.ClientInfo()
 
 
 class DashboardsServiceTransport(abc.ABC):
@@ -44,6 +56,7 @@ class DashboardsServiceTransport(abc.ABC):
         credentials: credentials.Credentials = None,
         credentials_file: typing.Optional[str] = None,
         scopes: typing.Optional[typing.Sequence[str]] = AUTH_SCOPES,
+        quota_project_id: typing.Optional[str] = None,
         **kwargs,
     ) -> None:
         """Instantiate the transport.
@@ -59,6 +72,8 @@ class DashboardsServiceTransport(abc.ABC):
                 be loaded with :func:`google.auth.load_credentials_from_file`.
                 This argument is mutually exclusive with credentials.
             scope (Optional[Sequence[str]]): A list of scopes.
+            quota_project_id (Optional[str]): An optional project to use for billing
+                and quota.
         """
         # Save the hostname. Default to port 443 (HTTPS) if none is specified.
         if ":" not in host:
@@ -74,13 +89,39 @@ class DashboardsServiceTransport(abc.ABC):
 
         if credentials_file is not None:
             credentials, _ = auth.load_credentials_from_file(
-                credentials_file, scopes=scopes
+                credentials_file, scopes=scopes, quota_project_id=quota_project_id
             )
+
         elif credentials is None:
-            credentials, _ = auth.default(scopes=scopes)
+            credentials, _ = auth.default(
+                scopes=scopes, quota_project_id=quota_project_id
+            )
 
         # Save the credentials.
         self._credentials = credentials
+
+        # Lifted into its own function so it can be stubbed out during tests.
+        self._prep_wrapped_messages()
+
+    def _prep_wrapped_messages(self):
+        # Precompute the wrapped methods.
+        self._wrapped_methods = {
+            self.create_dashboard: gapic_v1.method.wrap_method(
+                self.create_dashboard, default_timeout=30.0, client_info=_client_info,
+            ),
+            self.list_dashboards: gapic_v1.method.wrap_method(
+                self.list_dashboards, default_timeout=None, client_info=_client_info,
+            ),
+            self.get_dashboard: gapic_v1.method.wrap_method(
+                self.get_dashboard, default_timeout=None, client_info=_client_info,
+            ),
+            self.delete_dashboard: gapic_v1.method.wrap_method(
+                self.delete_dashboard, default_timeout=30.0, client_info=_client_info,
+            ),
+            self.update_dashboard: gapic_v1.method.wrap_method(
+                self.update_dashboard, default_timeout=30.0, client_info=_client_info,
+            ),
+        }
 
     @property
     def create_dashboard(

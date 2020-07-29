@@ -234,6 +234,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
                 scopes=client_options.scopes,
                 api_mtls_endpoint=client_options.api_endpoint,
                 client_cert_source=client_options.client_cert_source,
+                quota_project_id=client_options.quota_project_id,
             )
 
     def create_dashboard(
@@ -274,11 +275,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         # Wrap the RPC method; this adds retry and timeout information,
         # and friendly error handling.
-        rpc = gapic_v1.method.wrap_method(
-            self._transport.create_dashboard,
-            default_timeout=None,
-            client_info=_client_info,
-        )
+        rpc = self._transport._wrapped_methods[self._transport.create_dashboard]
 
         # Certain fields should be provided within the metadata header;
         # add these here.
@@ -330,11 +327,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         # Wrap the RPC method; this adds retry and timeout information,
         # and friendly error handling.
-        rpc = gapic_v1.method.wrap_method(
-            self._transport.list_dashboards,
-            default_timeout=None,
-            client_info=_client_info,
-        )
+        rpc = self._transport._wrapped_methods[self._transport.list_dashboards]
 
         # Certain fields should be provided within the metadata header;
         # add these here.
@@ -392,11 +385,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         # Wrap the RPC method; this adds retry and timeout information,
         # and friendly error handling.
-        rpc = gapic_v1.method.wrap_method(
-            self._transport.get_dashboard,
-            default_timeout=None,
-            client_info=_client_info,
-        )
+        rpc = self._transport._wrapped_methods[self._transport.get_dashboard]
 
         # Certain fields should be provided within the metadata header;
         # add these here.
@@ -440,11 +429,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         # Wrap the RPC method; this adds retry and timeout information,
         # and friendly error handling.
-        rpc = gapic_v1.method.wrap_method(
-            self._transport.delete_dashboard,
-            default_timeout=None,
-            client_info=_client_info,
-        )
+        rpc = self._transport._wrapped_methods[self._transport.delete_dashboard]
 
         # Certain fields should be provided within the metadata header;
         # add these here.
@@ -495,11 +480,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         # Wrap the RPC method; this adds retry and timeout information,
         # and friendly error handling.
-        rpc = gapic_v1.method.wrap_method(
-            self._transport.update_dashboard,
-            default_timeout=None,
-            client_info=_client_info,
-        )
+        rpc = self._transport._wrapped_methods[self._transport.update_dashboard]
 
         # Certain fields should be provided within the metadata header;
         # add these here.

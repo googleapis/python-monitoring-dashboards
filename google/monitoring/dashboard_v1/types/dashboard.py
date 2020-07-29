@@ -63,11 +63,17 @@ class Dashboard(proto.Message):
 
     etag = proto.Field(proto.STRING, number=4)
 
-    grid_layout = proto.Field(proto.MESSAGE, number=5, message=layouts.GridLayout,)
+    grid_layout = proto.Field(
+        proto.MESSAGE, number=5, oneof="layout", message=layouts.GridLayout,
+    )
 
-    row_layout = proto.Field(proto.MESSAGE, number=8, message=layouts.RowLayout,)
+    row_layout = proto.Field(
+        proto.MESSAGE, number=8, oneof="layout", message=layouts.RowLayout,
+    )
 
-    column_layout = proto.Field(proto.MESSAGE, number=9, message=layouts.ColumnLayout,)
+    column_layout = proto.Field(
+        proto.MESSAGE, number=9, oneof="layout", message=layouts.ColumnLayout,
+    )
 
 
 __all__ = tuple(sorted(__protobuf__.manifest))

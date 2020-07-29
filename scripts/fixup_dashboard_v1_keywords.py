@@ -45,6 +45,7 @@ class dashboardCallTransformer(cst.CSTTransformer):
     'get_dashboard': ('name', ),
     'list_dashboards': ('parent', 'page_size', 'page_token', ),
     'update_dashboard': ('dashboard', ),
+
     }
 
     def leave_Call(self, original: cst.Call, updated: cst.Call) -> cst.CSTNode:

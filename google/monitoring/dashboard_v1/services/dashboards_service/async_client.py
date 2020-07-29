@@ -138,7 +138,7 @@ class DashboardsServiceAsyncClient:
         # and friendly error handling.
         rpc = gapic_v1.method_async.wrap_method(
             self._client._transport.create_dashboard,
-            default_timeout=None,
+            default_timeout=30.0,
             client_info=_client_info,
         )
 
@@ -304,7 +304,7 @@ class DashboardsServiceAsyncClient:
         # and friendly error handling.
         rpc = gapic_v1.method_async.wrap_method(
             self._client._transport.delete_dashboard,
-            default_timeout=None,
+            default_timeout=30.0,
             client_info=_client_info,
         )
 
@@ -359,7 +359,7 @@ class DashboardsServiceAsyncClient:
         # and friendly error handling.
         rpc = gapic_v1.method_async.wrap_method(
             self._client._transport.update_dashboard,
-            default_timeout=None,
+            default_timeout=30.0,
             client_info=_client_info,
         )
 
