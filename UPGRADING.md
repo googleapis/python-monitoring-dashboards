@@ -16,67 +16,66 @@ Methods expect request objects. We provide a script that will convert most commo
 * Install the library
 
 ```py
-python3 -m pip install google-cloud-phishing-protection
+python3 -m pip install google-cloud-monitoring-dashboards
 ```
 
-* The scripts `fixup_phishingprotection_v1beta1_keywords.py` shipped with the library. It expects
+* The scripts `fixup_dashboard_v1_keywords.py` shipped with the library. It expects
 an input directory (with the code to convert) and an empty destination directory.
 
 ```sh
-$ fixup_phishingprotection_v1beta1_keywords.py --input-directory .samples/ --output-directory samples/
+$ fixup_dashboard_v1_keywords.py --input-directory .samples/ --output-directory samples/
 ```
 
 **Before:**
 ```py
-from google.cloud import phishingprotection_v1beta1
-client = phishingprotection_v1beta1.PhishingProtectionServiceClient()
-parent = client.project_path('[PROJECT]')
-# TODO: Initialize `uri`:
-uri = ''
-response = client.report_phishing(parent, uri)
+from google.cloud.monitoring_dashboard import v1
+client = v1.DashboardsServiceClient()
+# TODO: Initialize `parent`:
+parent = ''
+# TODO: Initialize `dashboard`:
+dashboard = {}
+response = client.create_dashboard(parent, dashboard)
 ```
 
 
 **After:**
 ```py
-from google.cloud import phishingprotection_v1beta1
-client = phishingprotection_v1beta1.PhishingProtectionServiceClient()
-response = client.report_phishing(request={"parent": "project/project_number", "uri": "''"})
+from google.cloud.monitoring_dashboard import v1
+client = v1.DashboardsServiceClient()
+response = client.create_dashboard(request={"parent": "''", "dashboard": "{}"})
 ```
 
 ### More Details
 
-In `google-cloud-phishing-protection<1.0.0`, parameters required by the API were positional parameters and optional parameters were keyword parameters.
+In `google-cloud-monitoring-dashboards<2.0.0`, parameters required by the API were positional parameters and optional parameters were keyword parameters.
 
 **Before:**
 ```py
-    def report_phishing(
+    def create_dashboard(
         self,
         parent,
-        uri,
+        dashboard,
         retry=google.api_core.gapic_v1.method.DEFAULT,
         timeout=google.api_core.gapic_v1.method.DEFAULT,
         metadata=None,
     ):
 ```
 
-In the 1.0.0 release, all methods have a single positional parameter `request`. Method docstrings indicate whether a parameter is required or optional.
+In the 2.0.0 release, all methods have a single positional parameter `request`. Method docstrings indicate whether a parameter is required or optional.
 
-Some methods have additional keyword only parameters. The available parameters depend on the [`google.api.method_signature` annotation](https://github.com/googleapis/googleapis/blob/master/google/cloud/phishingprotection/v1beta1/phishingprotection.proto#L51) specified by the API producer.
+Some methods have additional keyword only parameters. The available parameters depend on the [`google.api.method_signature` annotation] specified by the API producer.
 
 
 **After:**
 ```py
-    def report_phishing(
+    def create_dashboard(
         self,
-        request: phishingprotection.ReportPhishingRequest = None,
+        request: dashboards_service.CreateDashboardRequest = None,
         *,
-        parent: str = None,
-        uri: str = None,
         retry: retries.Retry = gapic_v1.method.DEFAULT,
         timeout: float = None,
         metadata: Sequence[Tuple[str, str]] = (),
-    ) -> phishingprotection.ReportPhishingResponse:
+    ) -> dashboard.Dashboard:
 ```
 
 > **NOTE:** The `request` parameter and flattened keyword parameters for the API are mutually exclusive.
@@ -87,7 +86,7 @@ Both of these calls are valid:
 response = client.report_phishing(
     request={
         "parent": parent,
-        "uri": uri,
+        "dashboard": dashboard,
     }
 )
 ```
@@ -95,18 +94,17 @@ response = client.report_phishing(
 ```py
 response = client.report_phishing(
     parent=parent,
-    uri=uri,
+    dashboard=dashboard,
 )
 ```
 
-This call is invalid because it mixes `request` with a keyword argument `uri`. Executing this code
-will result in an error.
+This call is invalid because it mixes `request` with a keyword argument `dashboard`. Executing this code will result in an error.
 
 ```py
 response = client.report_phishing(
     request={
         "parent": parent,
     },
-    uri=uri
+    dashboard=dashboard
 )
 ```
