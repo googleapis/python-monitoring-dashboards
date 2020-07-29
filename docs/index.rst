@@ -7,5 +7,5 @@ Api Reference
 .. toctree::
     :maxdepth: 2
 
-    gapic/v1/api
-    gapic/v1/types
+    dashboard_v1/services
+    dashboard_v1/types
