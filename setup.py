@@ -28,7 +28,6 @@ dependencies = [
     "google-api-core[grpc] >= 1.22.0, < 2.0.0dev",
     "proto-plus >= 0.4.0",
     "libcst >= 0.2.5",
-    'enum34; python_version < "3.4"',
 ]
 
 package_root = os.path.abspath(os.path.dirname(__file__))
@@ -64,6 +63,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
         "Operating System :: OS Independent",
         "Topic :: Internet",
     ],
@@ -71,7 +71,7 @@ setuptools.setup(
     packages=packages,
     namespace_packages=namespaces,
     install_requires=dependencies,
-    python_requires=">=3.6,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*",
+    python_requires=">=3.6",
     scripts=["scripts/fixup_dashboard_v1_keywords.py"],
     include_package_data=True,
     zip_safe=False,

@@ -9,6 +9,20 @@ If you experience issues or have questions, please file an [issue](https://githu
 > **WARNING**: Breaking change
 The 2.0.0 release requires Python 3.6+.
 
+## Create Service Client
+> **WARNING**: Breaking change
+The namespace for importing the service gets changed in the new release.
+**Before:**
+```py
+from google.cloud.monitoring_dashboard import v1
+client = v1.DashboardsServiceClient()
+```
+**After:**
+```py
+from google.cloud import monitoring_dashboard_v1
+client = monitoring_dashboard_v1.DashboardsServiceClient()
+```
+
 ## Method Calls
 
 > **WARNING**: Breaking change
@@ -28,8 +42,6 @@ $ fixup_dashboard_v1_keywords.py --input-directory .samples/ --output-directory 
 
 **Before:**
 ```py
-from google.cloud.monitoring_dashboard import v1
-client = v1.DashboardsServiceClient()
 # TODO: Initialize `parent`:
 parent = ''
 # TODO: Initialize `dashboard`:
@@ -37,11 +49,8 @@ dashboard = {}
 response = client.create_dashboard(parent, dashboard)
 ```
 
-
 **After:**
 ```py
-from google.cloud.monitoring_dashboard import v1
-client = v1.DashboardsServiceClient()
 response = client.create_dashboard(request={"parent": "''", "dashboard": "{}"})
 ```
 
