@@ -12,6 +12,8 @@ The 2.0.0 release requires Python 3.6+.
 ## Create Service Client
 > **WARNING**: Breaking change
 The namespace for importing the service gets changed in the new release.
+
+
 **Before:**
 ```py
 from google.cloud.monitoring_dashboard import v1
