@@ -83,7 +83,7 @@ Some methods have additional keyword only parameters. The available parameters d
 Both of these calls are valid:
 
 ```py
-response = client.report_phishing(
+response = client.create_dashboard(
     request={
         "parent": parent,
         "dashboard": dashboard,
@@ -92,7 +92,7 @@ response = client.report_phishing(
 ```
 
 ```py
-response = client.report_phishing(
+response = client.create_dashboard(
     parent=parent,
     dashboard=dashboard,
 )
@@ -101,7 +101,7 @@ response = client.report_phishing(
 This call is invalid because it mixes `request` with a keyword argument `dashboard`. Executing this code will result in an error.
 
 ```py
-response = client.report_phishing(
+response = client.create_dashboard(
     request={
         "parent": parent,
     },
