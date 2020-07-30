@@ -28,9 +28,9 @@ library = gapic.py_library(
     version="v1",
     bazel_target="//google/monitoring/dashboard/v1:monitoring-dashboard-v1-py",
     include_protos=True,
-    proto_output_path="google/cloud/monitoring_dashboard_v1",
 )
 
+s.move(library / "google/cloud/monitoring_dashboard_v1/proto")
 s.move(library / "google/monitoring/dashboard", "google/cloud/monitoring_dashboard")
 s.move(
     library / "google/monitoring/dashboard_v1",
