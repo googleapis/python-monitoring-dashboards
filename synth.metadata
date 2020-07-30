@@ -4,21 +4,29 @@
       "git": {
         "name": ".",
         "remote": "git@github.com:googleapis/python-monitoring-dashboards.git",
-        "sha": "99fe0a49331317225cf3e5a2c5c8ef14aee94a22"
+        "sha": "bee992e45a3500dfe44089e7e594a906fd675c8d"
+      }
+    },
+    {
+      "git": {
+        "name": "googleapis",
+        "remote": "https://github.com/googleapis/googleapis.git",
+        "sha": "d399c754bdea83297877ab49e5f66b257a957a78",
+        "internalRef": "323860336"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "89d431fb2975fc4e0ed24995a6e6dfc8ff4c24fa"
+        "sha": "ee7506d15daa3873accfff9430eff7e3953f0248"
       }
     },
     {
       "git": {
         "name": "synthtool",
         "remote": "https://github.com/googleapis/synthtool.git",
-        "sha": "89d431fb2975fc4e0ed24995a6e6dfc8ff4c24fa"
+        "sha": "ee7506d15daa3873accfff9430eff7e3953f0248"
       }
     }
   ],

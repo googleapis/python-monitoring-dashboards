@@ -32,25 +32,25 @@ from google.api_core import grpc_helpers
 from google.api_core import grpc_helpers_async
 from google.auth import credentials
 from google.auth.exceptions import MutualTLSChannelError
-from google.monitoring.dashboard_v1.services.dashboards_service import (
+from google.cloud.monitoring_dashboard_v1.services.dashboards_service import (
     DashboardsServiceAsyncClient,
 )
-from google.monitoring.dashboard_v1.services.dashboards_service import (
+from google.cloud.monitoring_dashboard_v1.services.dashboards_service import (
     DashboardsServiceClient,
 )
-from google.monitoring.dashboard_v1.services.dashboards_service import pagers
-from google.monitoring.dashboard_v1.services.dashboards_service import transports
-from google.monitoring.dashboard_v1.types import common
-from google.monitoring.dashboard_v1.types import dashboard
-from google.monitoring.dashboard_v1.types import dashboards_service
-from google.monitoring.dashboard_v1.types import layouts
-from google.monitoring.dashboard_v1.types import metrics
-from google.monitoring.dashboard_v1.types import scorecard
-from google.monitoring.dashboard_v1.types import scorecard as gmd_scorecard
-from google.monitoring.dashboard_v1.types import text
-from google.monitoring.dashboard_v1.types import text as gmd_text
-from google.monitoring.dashboard_v1.types import widget
-from google.monitoring.dashboard_v1.types import xychart
+from google.cloud.monitoring_dashboard_v1.services.dashboards_service import pagers
+from google.cloud.monitoring_dashboard_v1.services.dashboards_service import transports
+from google.cloud.monitoring_dashboard_v1.types import common
+from google.cloud.monitoring_dashboard_v1.types import dashboard
+from google.cloud.monitoring_dashboard_v1.types import dashboards_service
+from google.cloud.monitoring_dashboard_v1.types import layouts
+from google.cloud.monitoring_dashboard_v1.types import metrics
+from google.cloud.monitoring_dashboard_v1.types import scorecard
+from google.cloud.monitoring_dashboard_v1.types import scorecard as gmd_scorecard
+from google.cloud.monitoring_dashboard_v1.types import text
+from google.cloud.monitoring_dashboard_v1.types import text as gmd_text
+from google.cloud.monitoring_dashboard_v1.types import widget
+from google.cloud.monitoring_dashboard_v1.types import xychart
 from google.oauth2 import service_account
 from google.protobuf import duration_pb2 as duration  # type: ignore
 
@@ -351,7 +351,7 @@ def test_dashboards_service_client_client_options_credentials_file(
 
 def test_dashboards_service_client_client_options_from_dict():
     with mock.patch(
-        "google.monitoring.dashboard_v1.services.dashboards_service.transports.DashboardsServiceGrpcTransport.__init__"
+        "google.cloud.monitoring_dashboard_v1.services.dashboards_service.transports.DashboardsServiceGrpcTransport.__init__"
     ) as grpc_transport:
         grpc_transport.return_value = None
         client = DashboardsServiceClient(
@@ -1221,7 +1221,7 @@ def test_dashboards_service_base_transport_error():
 def test_dashboards_service_base_transport():
     # Instantiate the base transport.
     with mock.patch(
-        "google.monitoring.dashboard_v1.services.dashboards_service.transports.DashboardsServiceTransport.__init__"
+        "google.cloud.monitoring_dashboard_v1.services.dashboards_service.transports.DashboardsServiceTransport.__init__"
     ) as Transport:
         Transport.return_value = None
         transport = transports.DashboardsServiceTransport(
@@ -1247,7 +1247,7 @@ def test_dashboards_service_base_transport_with_credentials_file():
     with mock.patch.object(
         auth, "load_credentials_from_file"
     ) as load_creds, mock.patch(
-        "google.monitoring.dashboard_v1.services.dashboards_service.transports.DashboardsServiceTransport._prep_wrapped_messages"
+        "google.cloud.monitoring_dashboard_v1.services.dashboards_service.transports.DashboardsServiceTransport._prep_wrapped_messages"
     ) as Transport:
         Transport.return_value = None
         load_creds.return_value = (credentials.AnonymousCredentials(), None)
