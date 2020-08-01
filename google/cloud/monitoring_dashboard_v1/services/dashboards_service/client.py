@@ -271,7 +271,12 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         """
         # Create or coerce a protobuf request object.
 
-        request = dashboards_service.CreateDashboardRequest(request)
+        # Minor optimization to avoid making a copy if the user passes
+        # in a dashboards_service.CreateDashboardRequest.
+        # There's no risk of modifying the input as we've already verified
+        # there are no flattened fields.
+        if not isinstance(request, dashboards_service.CreateDashboardRequest):
+            request = dashboards_service.CreateDashboardRequest(request)
 
         # Wrap the RPC method; this adds retry and timeout information,
         # and friendly error handling.
@@ -323,7 +328,12 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         """
         # Create or coerce a protobuf request object.
 
-        request = dashboards_service.ListDashboardsRequest(request)
+        # Minor optimization to avoid making a copy if the user passes
+        # in a dashboards_service.ListDashboardsRequest.
+        # There's no risk of modifying the input as we've already verified
+        # there are no flattened fields.
+        if not isinstance(request, dashboards_service.ListDashboardsRequest):
+            request = dashboards_service.ListDashboardsRequest(request)
 
         # Wrap the RPC method; this adds retry and timeout information,
         # and friendly error handling.
@@ -381,7 +391,12 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         """
         # Create or coerce a protobuf request object.
 
-        request = dashboards_service.GetDashboardRequest(request)
+        # Minor optimization to avoid making a copy if the user passes
+        # in a dashboards_service.GetDashboardRequest.
+        # There's no risk of modifying the input as we've already verified
+        # there are no flattened fields.
+        if not isinstance(request, dashboards_service.GetDashboardRequest):
+            request = dashboards_service.GetDashboardRequest(request)
 
         # Wrap the RPC method; this adds retry and timeout information,
         # and friendly error handling.
@@ -425,7 +440,12 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         """
         # Create or coerce a protobuf request object.
 
-        request = dashboards_service.DeleteDashboardRequest(request)
+        # Minor optimization to avoid making a copy if the user passes
+        # in a dashboards_service.DeleteDashboardRequest.
+        # There's no risk of modifying the input as we've already verified
+        # there are no flattened fields.
+        if not isinstance(request, dashboards_service.DeleteDashboardRequest):
+            request = dashboards_service.DeleteDashboardRequest(request)
 
         # Wrap the RPC method; this adds retry and timeout information,
         # and friendly error handling.
@@ -476,7 +496,12 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         """
         # Create or coerce a protobuf request object.
 
-        request = dashboards_service.UpdateDashboardRequest(request)
+        # Minor optimization to avoid making a copy if the user passes
+        # in a dashboards_service.UpdateDashboardRequest.
+        # There's no risk of modifying the input as we've already verified
+        # there are no flattened fields.
+        if not isinstance(request, dashboards_service.UpdateDashboardRequest):
+            request = dashboards_service.UpdateDashboardRequest(request)
 
         # Wrap the RPC method; this adds retry and timeout information,
         # and friendly error handling.
