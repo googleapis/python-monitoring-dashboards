@@ -33,7 +33,7 @@ from google.cloud.monitoring_dashboard_v1.types import dashboard
 from google.cloud.monitoring_dashboard_v1.types import dashboards_service
 from google.cloud.monitoring_dashboard_v1.types import layouts
 
-from .transports.base import DashboardsServiceTransport
+from .transports.base import DashboardsServiceTransport, DEFAULT_CLIENT_INFO
 from .transports.grpc_asyncio import DashboardsServiceGrpcAsyncIOTransport
 from .client import DashboardsServiceClient
 
@@ -63,6 +63,7 @@ class DashboardsServiceAsyncClient:
         credentials: credentials.Credentials = None,
         transport: Union[str, DashboardsServiceTransport] = "grpc_asyncio",
         client_options: ClientOptions = None,
+        client_info: gapic_v1.client_info.ClientInfo = DEFAULT_CLIENT_INFO,
     ) -> None:
         """Instantiate the dashboards service client.
 
@@ -95,7 +96,10 @@ class DashboardsServiceAsyncClient:
         """
 
         self._client = DashboardsServiceClient(
-            credentials=credentials, transport=transport, client_options=client_options,
+            credentials=credentials,
+            transport=transport,
+            client_options=client_options,
+            client_info=client_info,
         )
 
     async def create_dashboard(
@@ -139,7 +143,7 @@ class DashboardsServiceAsyncClient:
         rpc = gapic_v1.method_async.wrap_method(
             self._client._transport.create_dashboard,
             default_timeout=30.0,
-            client_info=_client_info,
+            client_info=DEFAULT_CLIENT_INFO,
         )
 
         # Certain fields should be provided within the metadata header;
@@ -195,7 +199,7 @@ class DashboardsServiceAsyncClient:
         rpc = gapic_v1.method_async.wrap_method(
             self._client._transport.list_dashboards,
             default_timeout=None,
-            client_info=_client_info,
+            client_info=DEFAULT_CLIENT_INFO,
         )
 
         # Certain fields should be provided within the metadata header;
@@ -257,7 +261,7 @@ class DashboardsServiceAsyncClient:
         rpc = gapic_v1.method_async.wrap_method(
             self._client._transport.get_dashboard,
             default_timeout=None,
-            client_info=_client_info,
+            client_info=DEFAULT_CLIENT_INFO,
         )
 
         # Certain fields should be provided within the metadata header;
@@ -305,7 +309,7 @@ class DashboardsServiceAsyncClient:
         rpc = gapic_v1.method_async.wrap_method(
             self._client._transport.delete_dashboard,
             default_timeout=30.0,
-            client_info=_client_info,
+            client_info=DEFAULT_CLIENT_INFO,
         )
 
         # Certain fields should be provided within the metadata header;
@@ -360,7 +364,7 @@ class DashboardsServiceAsyncClient:
         rpc = gapic_v1.method_async.wrap_method(
             self._client._transport.update_dashboard,
             default_timeout=30.0,
-            client_info=_client_info,
+            client_info=DEFAULT_CLIENT_INFO,
         )
 
         # Certain fields should be provided within the metadata header;
@@ -379,13 +383,13 @@ class DashboardsServiceAsyncClient:
 
 
 try:
-    _client_info = gapic_v1.client_info.ClientInfo(
+    DEFAULT_CLIENT_INFO = gapic_v1.client_info.ClientInfo(
         gapic_version=pkg_resources.get_distribution(
             "google-monitoring-dashboard",
         ).version,
     )
 except pkg_resources.DistributionNotFound:
-    _client_info = gapic_v1.client_info.ClientInfo()
+    DEFAULT_CLIENT_INFO = gapic_v1.client_info.ClientInfo()
 
 
 __all__ = ("DashboardsServiceAsyncClient",)
