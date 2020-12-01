@@ -710,8 +710,8 @@ def test_list_dashboards_pages():
             RuntimeError,
         )
         pages = list(client.list_dashboards(request={}).pages)
-        for page, token in zip(pages, ["abc", "def", "ghi", ""]):
-            assert page.raw_page.next_page_token == token
+        for page_, token in zip(pages, ["abc", "def", "ghi", ""]):
+            assert page_.raw_page.next_page_token == token
 
 
 @pytest.mark.asyncio
@@ -787,10 +787,10 @@ async def test_list_dashboards_async_pages():
             RuntimeError,
         )
         pages = []
-        async for page in (await client.list_dashboards(request={})).pages:
-            pages.append(page)
-        for page, token in zip(pages, ["abc", "def", "ghi", ""]):
-            assert page.raw_page.next_page_token == token
+        async for page_ in (await client.list_dashboards(request={})).pages:
+            pages.append(page_)
+        for page_, token in zip(pages, ["abc", "def", "ghi", ""]):
+            assert page_.raw_page.next_page_token == token
 
 
 def test_get_dashboard(
