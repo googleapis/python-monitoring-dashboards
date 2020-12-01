@@ -33,7 +33,7 @@ from google.cloud.monitoring_dashboard_v1.types import dashboard
 from google.cloud.monitoring_dashboard_v1.types import dashboards_service
 from google.cloud.monitoring_dashboard_v1.types import layouts
 
-from .transports.base import DashboardsServiceTransport, DEFAULT_CLIENT_INFO
+from .transports.base import DashboardsServiceTransport
 from .transports.grpc_asyncio import DashboardsServiceGrpcAsyncIOTransport
 from .client import DashboardsServiceClient
 
@@ -49,7 +49,6 @@ class DashboardsServiceAsyncClient:
     DEFAULT_MTLS_ENDPOINT = DashboardsServiceClient.DEFAULT_MTLS_ENDPOINT
 
     dashboard_path = staticmethod(DashboardsServiceClient.dashboard_path)
-    parse_dashboard_path = staticmethod(DashboardsServiceClient.parse_dashboard_path)
 
     from_service_account_file = DashboardsServiceClient.from_service_account_file
     from_service_account_json = from_service_account_file
@@ -64,7 +63,6 @@ class DashboardsServiceAsyncClient:
         credentials: credentials.Credentials = None,
         transport: Union[str, DashboardsServiceTransport] = "grpc_asyncio",
         client_options: ClientOptions = None,
-        client_info: gapic_v1.client_info.ClientInfo = DEFAULT_CLIENT_INFO,
     ) -> None:
         """Instantiate the dashboards service client.
 
@@ -80,19 +78,16 @@ class DashboardsServiceAsyncClient:
             client_options (ClientOptions): Custom options for the client. It
                 won't take effect if a ``transport`` instance is provided.
                 (1) The ``api_endpoint`` property can be used to override the
-                default endpoint provided by the client. GOOGLE_API_USE_MTLS_ENDPOINT
+                default endpoint provided by the client. GOOGLE_API_USE_MTLS
                 environment variable can also be used to override the endpoint:
                 "always" (always use the default mTLS endpoint), "never" (always
-                use the default regular endpoint) and "auto" (auto switch to the
-                default mTLS endpoint if client certificate is present, this is
-                the default value). However, the ``api_endpoint`` property takes
-                precedence if provided.
-                (2) If GOOGLE_API_USE_CLIENT_CERTIFICATE environment variable
-                is "true", then the ``client_cert_source`` property can be used
-                to provide client certificate for mutual TLS transport. If
-                not provided, the default SSL client certificate will be used if
-                present. If GOOGLE_API_USE_CLIENT_CERTIFICATE is "false" or not
-                set, no client certificate will be used.
+                use the default regular endpoint, this is the default value for
+                the environment variable) and "auto" (auto switch to the default
+                mTLS endpoint if client SSL credentials is present). However,
+                the ``api_endpoint`` property takes precedence if provided.
+                (2) The ``client_cert_source`` property is used to provide client
+                SSL credentials for mutual TLS transport. If not provided, the
+                default SSL credentials will be used if present.
 
         Raises:
             google.auth.exceptions.MutualTlsChannelError: If mutual TLS transport
@@ -100,10 +95,7 @@ class DashboardsServiceAsyncClient:
         """
 
         self._client = DashboardsServiceClient(
-            credentials=credentials,
-            transport=transport,
-            client_options=client_options,
-            client_info=client_info,
+            credentials=credentials, transport=transport, client_options=client_options,
         )
 
     async def create_dashboard(
@@ -147,7 +139,7 @@ class DashboardsServiceAsyncClient:
         rpc = gapic_v1.method_async.wrap_method(
             self._client._transport.create_dashboard,
             default_timeout=30.0,
-            client_info=DEFAULT_CLIENT_INFO,
+            client_info=_client_info,
         )
 
         # Certain fields should be provided within the metadata header;
@@ -203,7 +195,7 @@ class DashboardsServiceAsyncClient:
         rpc = gapic_v1.method_async.wrap_method(
             self._client._transport.list_dashboards,
             default_timeout=None,
-            client_info=DEFAULT_CLIENT_INFO,
+            client_info=_client_info,
         )
 
         # Certain fields should be provided within the metadata header;
@@ -265,7 +257,7 @@ class DashboardsServiceAsyncClient:
         rpc = gapic_v1.method_async.wrap_method(
             self._client._transport.get_dashboard,
             default_timeout=None,
-            client_info=DEFAULT_CLIENT_INFO,
+            client_info=_client_info,
         )
 
         # Certain fields should be provided within the metadata header;
@@ -313,7 +305,7 @@ class DashboardsServiceAsyncClient:
         rpc = gapic_v1.method_async.wrap_method(
             self._client._transport.delete_dashboard,
             default_timeout=30.0,
-            client_info=DEFAULT_CLIENT_INFO,
+            client_info=_client_info,
         )
 
         # Certain fields should be provided within the metadata header;
@@ -368,7 +360,7 @@ class DashboardsServiceAsyncClient:
         rpc = gapic_v1.method_async.wrap_method(
             self._client._transport.update_dashboard,
             default_timeout=30.0,
-            client_info=DEFAULT_CLIENT_INFO,
+            client_info=_client_info,
         )
 
         # Certain fields should be provided within the metadata header;
@@ -387,13 +379,13 @@ class DashboardsServiceAsyncClient:
 
 
 try:
-    DEFAULT_CLIENT_INFO = gapic_v1.client_info.ClientInfo(
+    _client_info = gapic_v1.client_info.ClientInfo(
         gapic_version=pkg_resources.get_distribution(
             "google-monitoring-dashboard",
         ).version,
     )
 except pkg_resources.DistributionNotFound:
-    DEFAULT_CLIENT_INFO = gapic_v1.client_info.ClientInfo()
+    _client_info = gapic_v1.client_info.ClientInfo()
 
 
 __all__ = ("DashboardsServiceAsyncClient",)
