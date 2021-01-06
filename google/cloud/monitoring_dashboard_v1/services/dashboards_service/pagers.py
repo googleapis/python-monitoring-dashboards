@@ -25,7 +25,7 @@ class ListDashboardsPager:
     """A pager for iterating through ``list_dashboards`` requests.
 
     This class thinly wraps an initial
-    :class:`~.dashboards_service.ListDashboardsResponse` object, and
+    :class:`google.cloud.monitoring_dashboard_v1.types.ListDashboardsResponse` object, and
     provides an ``__iter__`` method to iterate through its
     ``dashboards`` field.
 
@@ -34,7 +34,7 @@ class ListDashboardsPager:
     through the ``dashboards`` field on the
     corresponding responses.
 
-    All the usual :class:`~.dashboards_service.ListDashboardsResponse`
+    All the usual :class:`google.cloud.monitoring_dashboard_v1.types.ListDashboardsResponse`
     attributes are available on the pager. If multiple requests are made, only
     the most recent response is retained, and thus used for attribute lookup.
     """
@@ -52,9 +52,9 @@ class ListDashboardsPager:
         Args:
             method (Callable): The method that was originally called, and
                 which instantiated this pager.
-            request (:class:`~.dashboards_service.ListDashboardsRequest`):
+            request (google.cloud.monitoring_dashboard_v1.types.ListDashboardsRequest):
                 The initial request object.
-            response (:class:`~.dashboards_service.ListDashboardsResponse`):
+            response (google.cloud.monitoring_dashboard_v1.types.ListDashboardsResponse):
                 The initial response object.
             metadata (Sequence[Tuple[str, str]]): Strings which should be
                 sent along with the request as metadata.
@@ -87,7 +87,7 @@ class ListDashboardsAsyncPager:
     """A pager for iterating through ``list_dashboards`` requests.
 
     This class thinly wraps an initial
-    :class:`~.dashboards_service.ListDashboardsResponse` object, and
+    :class:`google.cloud.monitoring_dashboard_v1.types.ListDashboardsResponse` object, and
     provides an ``__aiter__`` method to iterate through its
     ``dashboards`` field.
 
@@ -96,7 +96,7 @@ class ListDashboardsAsyncPager:
     through the ``dashboards`` field on the
     corresponding responses.
 
-    All the usual :class:`~.dashboards_service.ListDashboardsResponse`
+    All the usual :class:`google.cloud.monitoring_dashboard_v1.types.ListDashboardsResponse`
     attributes are available on the pager. If multiple requests are made, only
     the most recent response is retained, and thus used for attribute lookup.
     """
@@ -114,9 +114,9 @@ class ListDashboardsAsyncPager:
         Args:
             method (Callable): The method that was originally called, and
                 which instantiated this pager.
-            request (:class:`~.dashboards_service.ListDashboardsRequest`):
+            request (google.cloud.monitoring_dashboard_v1.types.ListDashboardsRequest):
                 The initial request object.
-            response (:class:`~.dashboards_service.ListDashboardsResponse`):
+            response (google.cloud.monitoring_dashboard_v1.types.ListDashboardsResponse):
                 The initial response object.
             metadata (Sequence[Tuple[str, str]]): Strings which should be
                 sent along with the request as metadata.
