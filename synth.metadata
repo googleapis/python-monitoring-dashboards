@@ -4,7 +4,7 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/python-monitoring-dashboards.git",
-        "sha": "8e00d80b19618d42e79833cff20e2f62c08fcede"
+        "sha": "1c866a6c3d61723682685a421b1c790482e97807"
       }
     },
     {
