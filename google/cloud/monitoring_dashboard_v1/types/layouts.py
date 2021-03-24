@@ -37,7 +37,7 @@ class GridLayout(proto.Message):
             The number of columns into which the view's
             width is divided. If omitted or set to zero, a
             system default will be used while rendering.
-        widgets (Sequence[google.cloud.monitoring_dashboard_v1.types.Widget]):
+        widgets (Sequence[~.widget.Widget]):
             The informational elements that are arranged
             into the columns row-first.
     """
@@ -52,7 +52,7 @@ class RowLayout(proto.Message):
     rows and arranges a set of widgets horizontally in each row.
 
     Attributes:
-        rows (Sequence[google.cloud.monitoring_dashboard_v1.types.RowLayout.Row]):
+        rows (Sequence[~.layouts.RowLayout.Row]):
             The rows of content to display.
     """
 
@@ -67,7 +67,7 @@ class RowLayout(proto.Message):
                 weight, greater the height of the row on the
                 screen. If omitted, a value of 1 is used while
                 rendering.
-            widgets (Sequence[google.cloud.monitoring_dashboard_v1.types.Widget]):
+            widgets (Sequence[~.widget.Widget]):
                 The display widgets arranged horizontally in
                 this row.
         """
@@ -85,7 +85,7 @@ class ColumnLayout(proto.Message):
     each column.
 
     Attributes:
-        columns (Sequence[google.cloud.monitoring_dashboard_v1.types.ColumnLayout.Column]):
+        columns (Sequence[~.layouts.ColumnLayout.Column]):
             The columns of content to display.
     """
 
@@ -100,7 +100,7 @@ class ColumnLayout(proto.Message):
                 Greater the weight, greater the width of the
                 column on the screen. If omitted, a value of 1
                 is used while rendering.
-            widgets (Sequence[google.cloud.monitoring_dashboard_v1.types.Widget]):
+            widgets (Sequence[~.widget.Widget]):
                 The display widgets arranged vertically in
                 this column.
         """

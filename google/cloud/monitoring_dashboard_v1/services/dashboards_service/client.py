@@ -117,22 +117,6 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
     )
 
     @classmethod
-    def from_service_account_info(cls, info: dict, *args, **kwargs):
-        """Creates an instance of this client using the provided credentials info.
-
-        Args:
-            info (dict): The service account private key info.
-            args: Additional arguments to pass to the constructor.
-            kwargs: Additional arguments to pass to the constructor.
-
-        Returns:
-            DashboardsServiceClient: The constructed client.
-        """
-        credentials = service_account.Credentials.from_service_account_info(info)
-        kwargs["credentials"] = credentials
-        return cls(*args, **kwargs)
-
-    @classmethod
     def from_service_account_file(cls, filename: str, *args, **kwargs):
         """Creates an instance of this client using the provided credentials
         file.
@@ -144,7 +128,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
             kwargs: Additional arguments to pass to the constructor.
 
         Returns:
-            DashboardsServiceClient: The constructed client.
+            {@api.name}: The constructed client.
         """
         credentials = service_account.Credentials.from_service_account_file(filename)
         kwargs["credentials"] = credentials
@@ -249,10 +233,10 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
                 credentials identify the application to the service; if none
                 are specified, the client will attempt to ascertain the
                 credentials from the environment.
-            transport (Union[str, DashboardsServiceTransport]): The
+            transport (Union[str, ~.DashboardsServiceTransport]): The
                 transport to use. If set to None, a transport is chosen
                 automatically.
-            client_options (google.api_core.client_options.ClientOptions): Custom options for the
+            client_options (client_options_lib.ClientOptions): Custom options for the
                 client. It won't take effect if a ``transport`` instance is provided.
                 (1) The ``api_endpoint`` property can be used to override the
                 default endpoint provided by the client. GOOGLE_API_USE_MTLS_ENDPOINT
@@ -365,7 +349,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         `Google Cloud IAM <https://cloud.google.com/iam>`__.
 
         Args:
-            request (google.cloud.monitoring_dashboard_v1.types.CreateDashboardRequest):
+            request (:class:`~.dashboards_service.CreateDashboardRequest`):
                 The request object. The `CreateDashboard` request.
 
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
@@ -375,7 +359,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
                 sent along with the request as metadata.
 
         Returns:
-            google.cloud.monitoring_dashboard_v1.types.Dashboard:
+            ~.dashboard.Dashboard:
                 A Google Stackdriver dashboard.
                 Dashboards define the content and layout
                 of pages in the Stackdriver web
@@ -422,7 +406,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         `Google Cloud IAM <https://cloud.google.com/iam>`__.
 
         Args:
-            request (google.cloud.monitoring_dashboard_v1.types.ListDashboardsRequest):
+            request (:class:`~.dashboards_service.ListDashboardsRequest`):
                 The request object. The `ListDashboards` request.
 
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
@@ -432,8 +416,8 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
                 sent along with the request as metadata.
 
         Returns:
-            google.cloud.monitoring_dashboard_v1.services.dashboards_service.pagers.ListDashboardsPager:
-                The ListDashboards request.
+            ~.pagers.ListDashboardsPager:
+                The ``ListDashboards`` request.
 
                 Iterating over this object will yield results and
                 resolve additional pages automatically.
@@ -485,7 +469,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         `Google Cloud IAM <https://cloud.google.com/iam>`__.
 
         Args:
-            request (google.cloud.monitoring_dashboard_v1.types.GetDashboardRequest):
+            request (:class:`~.dashboards_service.GetDashboardRequest`):
                 The request object. The `GetDashboard` request.
 
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
@@ -495,7 +479,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
                 sent along with the request as metadata.
 
         Returns:
-            google.cloud.monitoring_dashboard_v1.types.Dashboard:
+            ~.dashboard.Dashboard:
                 A Google Stackdriver dashboard.
                 Dashboards define the content and layout
                 of pages in the Stackdriver web
@@ -542,7 +526,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         `Google Cloud IAM <https://cloud.google.com/iam>`__.
 
         Args:
-            request (google.cloud.monitoring_dashboard_v1.types.DeleteDashboardRequest):
+            request (:class:`~.dashboards_service.DeleteDashboardRequest`):
                 The request object. The `DeleteDashboard` request.
 
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
@@ -590,7 +574,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         `Google Cloud IAM <https://cloud.google.com/iam>`__.
 
         Args:
-            request (google.cloud.monitoring_dashboard_v1.types.UpdateDashboardRequest):
+            request (:class:`~.dashboards_service.UpdateDashboardRequest`):
                 The request object. The `UpdateDashboard` request.
 
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
@@ -600,7 +584,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
                 sent along with the request as metadata.
 
         Returns:
-            google.cloud.monitoring_dashboard_v1.types.Dashboard:
+            ~.dashboard.Dashboard:
                 A Google Stackdriver dashboard.
                 Dashboards define the content and layout
                 of pages in the Stackdriver web

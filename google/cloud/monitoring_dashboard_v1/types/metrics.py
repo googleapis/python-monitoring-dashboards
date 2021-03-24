@@ -47,9 +47,9 @@ class TimeSeriesQuery(proto.Message):
     querying time series data from the Stackdriver metrics API.
 
     Attributes:
-        time_series_filter (google.cloud.monitoring_dashboard_v1.types.TimeSeriesFilter):
+        time_series_filter (~.metrics.TimeSeriesFilter):
             Filter parameters to fetch time series.
-        time_series_filter_ratio (google.cloud.monitoring_dashboard_v1.types.TimeSeriesFilterRatio):
+        time_series_filter_ratio (~.metrics.TimeSeriesFilterRatio):
             Parameters to fetch a ratio between two time
             series filters.
         time_series_query_language (str):
@@ -87,15 +87,15 @@ class TimeSeriesFilter(proto.Message):
             filter <https://cloud.google.com/monitoring/api/v3/filters>`__
             that identifies the metric types, resources, and projects to
             query.
-        aggregation (google.cloud.monitoring_dashboard_v1.types.Aggregation):
+        aggregation (~.common.Aggregation):
             By default, the raw time series data is
             returned. Use this field to combine multiple
             time series for different views of the data.
-        secondary_aggregation (google.cloud.monitoring_dashboard_v1.types.Aggregation):
+        secondary_aggregation (~.common.Aggregation):
             Apply a second aggregation after ``aggregation`` is applied.
-        pick_time_series_filter (google.cloud.monitoring_dashboard_v1.types.PickTimeSeriesFilter):
+        pick_time_series_filter (~.common.PickTimeSeriesFilter):
             Ranking based time series filter.
-        statistical_time_series_filter (google.cloud.monitoring_dashboard_v1.types.StatisticalTimeSeriesFilter):
+        statistical_time_series_filter (~.common.StatisticalTimeSeriesFilter):
             Statistics based time series filter.
             Note: This field is deprecated and completely
             ignored by the API.
@@ -131,16 +131,16 @@ class TimeSeriesFilterRatio(proto.Message):
     series.
 
     Attributes:
-        numerator (google.cloud.monitoring_dashboard_v1.types.TimeSeriesFilterRatio.RatioPart):
+        numerator (~.metrics.TimeSeriesFilterRatio.RatioPart):
             The numerator of the ratio.
-        denominator (google.cloud.monitoring_dashboard_v1.types.TimeSeriesFilterRatio.RatioPart):
+        denominator (~.metrics.TimeSeriesFilterRatio.RatioPart):
             The denominator of the ratio.
-        secondary_aggregation (google.cloud.monitoring_dashboard_v1.types.Aggregation):
+        secondary_aggregation (~.common.Aggregation):
             Apply a second aggregation after the ratio is
             computed.
-        pick_time_series_filter (google.cloud.monitoring_dashboard_v1.types.PickTimeSeriesFilter):
+        pick_time_series_filter (~.common.PickTimeSeriesFilter):
             Ranking based time series filter.
-        statistical_time_series_filter (google.cloud.monitoring_dashboard_v1.types.StatisticalTimeSeriesFilter):
+        statistical_time_series_filter (~.common.StatisticalTimeSeriesFilter):
             Statistics based time series filter.
             Note: This field is deprecated and completely
             ignored by the API.
@@ -156,7 +156,7 @@ class TimeSeriesFilterRatio(proto.Message):
                 filter <https://cloud.google.com/monitoring/api/v3/filters>`__
                 that identifies the metric types, resources, and projects to
                 query.
-            aggregation (google.cloud.monitoring_dashboard_v1.types.Aggregation):
+            aggregation (~.common.Aggregation):
                 By default, the raw time series data is
                 returned. Use this field to combine multiple
                 time series for different views of the data.
@@ -198,10 +198,10 @@ class Threshold(proto.Message):
         value (float):
             The value of the threshold. The value should
             be defined in the native scale of the metric.
-        color (google.cloud.monitoring_dashboard_v1.types.Threshold.Color):
+        color (~.metrics.Threshold.Color):
             The state color for this threshold. Color is
             not allowed in a XyChart.
-        direction (google.cloud.monitoring_dashboard_v1.types.Threshold.Direction):
+        direction (~.metrics.Threshold.Direction):
             The direction for the current threshold.
             Direction is not allowed in a XyChart.
     """

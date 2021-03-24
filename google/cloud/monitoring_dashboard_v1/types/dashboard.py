@@ -45,14 +45,14 @@ class Dashboard(proto.Message):
             that their change will be applied to the same version of the
             Dashboard configuration. The field should not be passed
             during dashboard creation.
-        grid_layout (google.cloud.monitoring_dashboard_v1.types.GridLayout):
+        grid_layout (~.layouts.GridLayout):
             Content is arranged with a basic layout that
             re-flows a simple list of informational elements
             like widgets or tiles.
-        row_layout (google.cloud.monitoring_dashboard_v1.types.RowLayout):
+        row_layout (~.layouts.RowLayout):
             The content is divided into equally spaced
             rows and the widgets are arranged horizontally.
-        column_layout (google.cloud.monitoring_dashboard_v1.types.ColumnLayout):
+        column_layout (~.layouts.ColumnLayout):
             The content is divided into equally spaced
             columns and the widgets are arranged vertically.
     """

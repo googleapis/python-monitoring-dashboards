@@ -80,7 +80,6 @@ class DashboardsServiceAsyncClient:
         DashboardsServiceClient.parse_common_location_path
     )
 
-    from_service_account_info = DashboardsServiceClient.from_service_account_info
     from_service_account_file = DashboardsServiceClient.from_service_account_file
     from_service_account_json = from_service_account_file
 
@@ -160,7 +159,7 @@ class DashboardsServiceAsyncClient:
         `Google Cloud IAM <https://cloud.google.com/iam>`__.
 
         Args:
-            request (:class:`google.cloud.monitoring_dashboard_v1.types.CreateDashboardRequest`):
+            request (:class:`~.dashboards_service.CreateDashboardRequest`):
                 The request object. The `CreateDashboard` request.
 
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
@@ -170,7 +169,7 @@ class DashboardsServiceAsyncClient:
                 sent along with the request as metadata.
 
         Returns:
-            google.cloud.monitoring_dashboard_v1.types.Dashboard:
+            ~.dashboard.Dashboard:
                 A Google Stackdriver dashboard.
                 Dashboards define the content and layout
                 of pages in the Stackdriver web
@@ -216,7 +215,7 @@ class DashboardsServiceAsyncClient:
         `Google Cloud IAM <https://cloud.google.com/iam>`__.
 
         Args:
-            request (:class:`google.cloud.monitoring_dashboard_v1.types.ListDashboardsRequest`):
+            request (:class:`~.dashboards_service.ListDashboardsRequest`):
                 The request object. The `ListDashboards` request.
 
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
@@ -226,8 +225,8 @@ class DashboardsServiceAsyncClient:
                 sent along with the request as metadata.
 
         Returns:
-            google.cloud.monitoring_dashboard_v1.services.dashboards_service.pagers.ListDashboardsAsyncPager:
-                The ListDashboards request.
+            ~.pagers.ListDashboardsAsyncPager:
+                The ``ListDashboards`` request.
 
                 Iterating over this object will yield results and
                 resolve additional pages automatically.
@@ -278,7 +277,7 @@ class DashboardsServiceAsyncClient:
         `Google Cloud IAM <https://cloud.google.com/iam>`__.
 
         Args:
-            request (:class:`google.cloud.monitoring_dashboard_v1.types.GetDashboardRequest`):
+            request (:class:`~.dashboards_service.GetDashboardRequest`):
                 The request object. The `GetDashboard` request.
 
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
@@ -288,7 +287,7 @@ class DashboardsServiceAsyncClient:
                 sent along with the request as metadata.
 
         Returns:
-            google.cloud.monitoring_dashboard_v1.types.Dashboard:
+            ~.dashboard.Dashboard:
                 A Google Stackdriver dashboard.
                 Dashboards define the content and layout
                 of pages in the Stackdriver web
@@ -334,7 +333,7 @@ class DashboardsServiceAsyncClient:
         `Google Cloud IAM <https://cloud.google.com/iam>`__.
 
         Args:
-            request (:class:`google.cloud.monitoring_dashboard_v1.types.DeleteDashboardRequest`):
+            request (:class:`~.dashboards_service.DeleteDashboardRequest`):
                 The request object. The `DeleteDashboard` request.
 
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
@@ -381,7 +380,7 @@ class DashboardsServiceAsyncClient:
         `Google Cloud IAM <https://cloud.google.com/iam>`__.
 
         Args:
-            request (:class:`google.cloud.monitoring_dashboard_v1.types.UpdateDashboardRequest`):
+            request (:class:`~.dashboards_service.UpdateDashboardRequest`):
                 The request object. The `UpdateDashboard` request.
 
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
@@ -391,7 +390,7 @@ class DashboardsServiceAsyncClient:
                 sent along with the request as metadata.
 
         Returns:
-            google.cloud.monitoring_dashboard_v1.types.Dashboard:
+            ~.dashboard.Dashboard:
                 A Google Stackdriver dashboard.
                 Dashboards define the content and layout
                 of pages in the Stackdriver web

@@ -1,6 +1,6 @@
 Services for Google Monitoring Dashboard v1 API
 ===============================================
-.. toctree::
-    :maxdepth: 2
 
-    dashboards_service
+.. automodule:: google.cloud.monitoring_dashboard_v1.services.dashboards_service
+    :members:
+    :inherited-members:

@@ -48,7 +48,7 @@ class CreateDashboardRequest(proto.Message):
 
             The ``[PROJECT_ID_OR_NUMBER]`` must match the dashboard
             resource name.
-        dashboard (google.cloud.monitoring_dashboard_v1.types.Dashboard):
+        dashboard (~.gmd_dashboard.Dashboard):
             Required. The initial dashboard
             specification.
     """
@@ -91,7 +91,7 @@ class ListDashboardsResponse(proto.Message):
     r"""The ``ListDashboards`` request.
 
     Attributes:
-        dashboards (Sequence[google.cloud.monitoring_dashboard_v1.types.Dashboard]):
+        dashboards (Sequence[~.gmd_dashboard.Dashboard]):
             The list of requested dashboards.
         next_page_token (str):
             If there are more results than have been returned, then this
@@ -146,7 +146,7 @@ class UpdateDashboardRequest(proto.Message):
     r"""The ``UpdateDashboard`` request.
 
     Attributes:
-        dashboard (google.cloud.monitoring_dashboard_v1.types.Dashboard):
+        dashboard (~.gmd_dashboard.Dashboard):
             Required. The dashboard that will replace the
             existing dashboard.
     """
