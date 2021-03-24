@@ -4,15 +4,15 @@
       "git": {
         "name": ".",
         "remote": "https://github.com/googleapis/python-monitoring-dashboards.git",
-        "sha": "8e00d80b19618d42e79833cff20e2f62c08fcede"
+        "sha": "1c866a6c3d61723682685a421b1c790482e97807"
       }
     },
     {
       "git": {
         "name": "googleapis",
         "remote": "https://github.com/googleapis/googleapis.git",
-        "sha": "dd372aa22ded7a8ba6f0e03a80e06358a3fa0907",
-        "internalRef": "347055288"
+        "sha": "20712b8fe95001b312f62c6c5f33e3e3ec92cfaf",
+        "internalRef": "354996675"
       }
     },
     {
@@ -93,6 +93,7 @@
     "docs/_static/custom.css",
     "docs/_templates/layout.html",
     "docs/conf.py",
+    "docs/dashboard_v1/dashboards_service.rst",
     "docs/dashboard_v1/services.rst",
     "docs/dashboard_v1/types.rst",
     "docs/multiprocessing.rst",
