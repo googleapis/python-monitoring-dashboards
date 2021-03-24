@@ -18,12 +18,12 @@
 import proto  # type: ignore
 
 
-from google.cloud.monitoring_dashboard_v1.types import widget
+from google.cloud.monitoring_dashboard_v1.types import widget as gmd_widget
 
 
 __protobuf__ = proto.module(
     package="google.monitoring.dashboard.v1",
-    manifest={"GridLayout", "RowLayout", "ColumnLayout",},
+    manifest={"GridLayout", "MosaicLayout", "RowLayout", "ColumnLayout",},
 )
 
 
@@ -44,7 +44,62 @@ class GridLayout(proto.Message):
 
     columns = proto.Field(proto.INT64, number=1)
 
-    widgets = proto.RepeatedField(proto.MESSAGE, number=2, message=widget.Widget,)
+    widgets = proto.RepeatedField(proto.MESSAGE, number=2, message=gmd_widget.Widget,)
+
+
+class MosaicLayout(proto.Message):
+    r"""A mosaic layout divides the available space into a grid of blocks,
+    and overlays the grid with tiles. Unlike ``GridLayout``, tiles may
+    span multiple grid blocks and can be placed at arbitrary locations
+    in the grid.
+
+    Attributes:
+        columns (int):
+            The number of columns in the mosaic grid. The
+            number of columns must be between 1 and 12,
+            inclusive.
+        tiles (Sequence[google.cloud.monitoring_dashboard_v1.types.MosaicLayout.Tile]):
+            The tiles to display.
+    """
+
+    class Tile(proto.Message):
+        r"""A single tile in the mosaic. The placement and size of the
+        tile are configurable.
+
+        Attributes:
+            x_pos (int):
+                The zero-indexed position of the tile in grid blocks
+                relative to the left edge of the grid. Tiles must be
+                contained within the specified number of columns. ``x_pos``
+                cannot be negative.
+            y_pos (int):
+                The zero-indexed position of the tile in grid blocks
+                relative to the top edge of the grid. ``y_pos`` cannot be
+                negative.
+            width (int):
+                The width of the tile, measured in grid
+                blocks. Tiles must have a minimum width of 1.
+            height (int):
+                The height of the tile, measured in grid
+                blocks. Tiles must have a minimum height of 1.
+            widget (google.cloud.monitoring_dashboard_v1.types.Widget):
+                The informational widget contained in the tile. For example
+                an ``XyChart``.
+        """
+
+        x_pos = proto.Field(proto.INT32, number=1)
+
+        y_pos = proto.Field(proto.INT32, number=2)
+
+        width = proto.Field(proto.INT32, number=3)
+
+        height = proto.Field(proto.INT32, number=4)
+
+        widget = proto.Field(proto.MESSAGE, number=5, message=gmd_widget.Widget,)
+
+    columns = proto.Field(proto.INT32, number=1)
+
+    tiles = proto.RepeatedField(proto.MESSAGE, number=3, message=Tile,)
 
 
 class RowLayout(proto.Message):
@@ -74,7 +129,9 @@ class RowLayout(proto.Message):
 
         weight = proto.Field(proto.INT64, number=1)
 
-        widgets = proto.RepeatedField(proto.MESSAGE, number=2, message=widget.Widget,)
+        widgets = proto.RepeatedField(
+            proto.MESSAGE, number=2, message=gmd_widget.Widget,
+        )
 
     rows = proto.RepeatedField(proto.MESSAGE, number=1, message=Row,)
 
@@ -107,7 +164,9 @@ class ColumnLayout(proto.Message):
 
         weight = proto.Field(proto.INT64, number=1)
 
-        widgets = proto.RepeatedField(proto.MESSAGE, number=2, message=widget.Widget,)
+        widgets = proto.RepeatedField(
+            proto.MESSAGE, number=2, message=gmd_widget.Widget,
+        )
 
     columns = proto.RepeatedField(proto.MESSAGE, number=1, message=Column,)
 

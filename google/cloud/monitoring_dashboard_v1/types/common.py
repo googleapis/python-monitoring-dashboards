@@ -70,6 +70,9 @@ class Aggregation(proto.Message):
             is required or an error is returned. If no per-series
             aligner is specified, or the aligner ``ALIGN_NONE`` is
             specified, then this field is ignored.
+
+            The maximum value of the ``alignment_period`` is 2 years, or
+            104 weeks.
         per_series_aligner (google.cloud.monitoring_dashboard_v1.types.Aggregation.Aligner):
             An ``Aligner`` describes how to bring the data points in a
             single time series into temporal alignment. Except for

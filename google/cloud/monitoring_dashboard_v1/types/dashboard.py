@@ -49,6 +49,10 @@ class Dashboard(proto.Message):
             Content is arranged with a basic layout that
             re-flows a simple list of informational elements
             like widgets or tiles.
+        mosaic_layout (google.cloud.monitoring_dashboard_v1.types.MosaicLayout):
+            The content is arranged as a grid of tiles,
+            with each content widget occupying one or more
+            grid blocks.
         row_layout (google.cloud.monitoring_dashboard_v1.types.RowLayout):
             The content is divided into equally spaced
             rows and the widgets are arranged horizontally.
@@ -65,6 +69,10 @@ class Dashboard(proto.Message):
 
     grid_layout = proto.Field(
         proto.MESSAGE, number=5, oneof="layout", message=layouts.GridLayout,
+    )
+
+    mosaic_layout = proto.Field(
+        proto.MESSAGE, number=6, oneof="layout", message=layouts.MosaicLayout,
     )
 
     row_layout = proto.Field(

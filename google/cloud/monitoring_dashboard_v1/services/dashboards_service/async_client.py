@@ -181,11 +181,12 @@ class DashboardsServiceAsyncClient:
         timeout: float = None,
         metadata: Sequence[Tuple[str, str]] = (),
     ) -> dashboard.Dashboard:
-        r"""Creates a new custom dashboard.
-
-        This method requires the ``monitoring.dashboards.create``
-        permission on the specified project. For more information, see
-        `Google Cloud IAM <https://cloud.google.com/iam>`__.
+        r"""Creates a new custom dashboard. For examples on how you can use
+        this API to create dashboards, see `Managing dashboards by
+        API </monitoring/dashboards/api-dashboard>`__. This method
+        requires the ``monitoring.dashboards.create`` permission on the
+        specified project. For more information about permissions, see
+        `Cloud Identity and Access Management </iam>`__.
 
         Args:
             request (:class:`google.cloud.monitoring_dashboard_v1.types.CreateDashboardRequest`):
@@ -241,7 +242,8 @@ class DashboardsServiceAsyncClient:
 
         This method requires the ``monitoring.dashboards.list``
         permission on the specified project. For more information, see
-        `Google Cloud IAM <https://cloud.google.com/iam>`__.
+        `Cloud Identity and Access
+        Management <https://cloud.google.com/iam>`__.
 
         Args:
             request (:class:`google.cloud.monitoring_dashboard_v1.types.ListDashboardsRequest`):
@@ -303,7 +305,8 @@ class DashboardsServiceAsyncClient:
 
         This method requires the ``monitoring.dashboards.get``
         permission on the specified dashboard. For more information, see
-        `Google Cloud IAM <https://cloud.google.com/iam>`__.
+        `Cloud Identity and Access
+        Management <https://cloud.google.com/iam>`__.
 
         Args:
             request (:class:`google.cloud.monitoring_dashboard_v1.types.GetDashboardRequest`):
@@ -359,7 +362,8 @@ class DashboardsServiceAsyncClient:
 
         This method requires the ``monitoring.dashboards.delete``
         permission on the specified dashboard. For more information, see
-        `Google Cloud IAM <https://cloud.google.com/iam>`__.
+        `Cloud Identity and Access
+        Management <https://cloud.google.com/iam>`__.
 
         Args:
             request (:class:`google.cloud.monitoring_dashboard_v1.types.DeleteDashboardRequest`):
@@ -406,7 +410,8 @@ class DashboardsServiceAsyncClient:
 
         This method requires the ``monitoring.dashboards.update``
         permission on the specified dashboard. For more information, see
-        `Google Cloud IAM <https://cloud.google.com/iam>`__.
+        `Cloud Identity and Access
+        Management <https://cloud.google.com/iam>`__.
 
         Args:
             request (:class:`google.cloud.monitoring_dashboard_v1.types.UpdateDashboardRequest`):
