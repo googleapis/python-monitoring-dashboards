@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 # Copyright 2020 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
 from collections import OrderedDict
 from distutils import util
 import os
@@ -23,10 +21,10 @@ from typing import Callable, Dict, Optional, Sequence, Tuple, Type, Union
 import pkg_resources
 
 from google.api_core import client_options as client_options_lib  # type: ignore
-from google.api_core import exceptions  # type: ignore
+from google.api_core import exceptions as core_exceptions  # type: ignore
 from google.api_core import gapic_v1  # type: ignore
 from google.api_core import retry as retries  # type: ignore
-from google.auth import credentials  # type: ignore
+from google.auth import credentials as ga_credentials  # type: ignore
 from google.auth.transport import mtls  # type: ignore
 from google.auth.transport.grpc import SslCredentials  # type: ignore
 from google.auth.exceptions import MutualTLSChannelError  # type: ignore
@@ -36,7 +34,6 @@ from google.cloud.monitoring_dashboard_v1.services.dashboards_service import pag
 from google.cloud.monitoring_dashboard_v1.types import dashboard
 from google.cloud.monitoring_dashboard_v1.types import dashboards_service
 from google.cloud.monitoring_dashboard_v1.types import layouts
-
 from .transports.base import DashboardsServiceTransport, DEFAULT_CLIENT_INFO
 from .transports.grpc import DashboardsServiceGrpcTransport
 from .transports.grpc_asyncio import DashboardsServiceGrpcAsyncIOTransport
@@ -236,7 +233,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
     def __init__(
         self,
         *,
-        credentials: Optional[credentials.Credentials] = None,
+        credentials: Optional[ga_credentials.Credentials] = None,
         transport: Union[str, DashboardsServiceTransport, None] = None,
         client_options: Optional[client_options_lib.ClientOptions] = None,
         client_info: gapic_v1.client_info.ClientInfo = DEFAULT_CLIENT_INFO,
@@ -365,7 +362,6 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         Args:
             request (google.cloud.monitoring_dashboard_v1.types.CreateDashboardRequest):
                 The request object. The `CreateDashboard` request.
-
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
                 should be retried.
             timeout (float): The timeout for this request.
@@ -381,7 +377,6 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         """
         # Create or coerce a protobuf request object.
-
         # Minor optimization to avoid making a copy if the user passes
         # in a dashboards_service.CreateDashboardRequest.
         # There's no risk of modifying the input as we've already verified
@@ -423,7 +418,6 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         Args:
             request (google.cloud.monitoring_dashboard_v1.types.ListDashboardsRequest):
                 The request object. The `ListDashboards` request.
-
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
                 should be retried.
             timeout (float): The timeout for this request.
@@ -439,7 +433,6 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         """
         # Create or coerce a protobuf request object.
-
         # Minor optimization to avoid making a copy if the user passes
         # in a dashboards_service.ListDashboardsRequest.
         # There's no risk of modifying the input as we've already verified
@@ -487,7 +480,6 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         Args:
             request (google.cloud.monitoring_dashboard_v1.types.GetDashboardRequest):
                 The request object. The `GetDashboard` request.
-
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
                 should be retried.
             timeout (float): The timeout for this request.
@@ -503,7 +495,6 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         """
         # Create or coerce a protobuf request object.
-
         # Minor optimization to avoid making a copy if the user passes
         # in a dashboards_service.GetDashboardRequest.
         # There's no risk of modifying the input as we've already verified
@@ -545,7 +536,6 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         Args:
             request (google.cloud.monitoring_dashboard_v1.types.DeleteDashboardRequest):
                 The request object. The `DeleteDashboard` request.
-
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
                 should be retried.
             timeout (float): The timeout for this request.
@@ -553,7 +543,6 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
                 sent along with the request as metadata.
         """
         # Create or coerce a protobuf request object.
-
         # Minor optimization to avoid making a copy if the user passes
         # in a dashboards_service.DeleteDashboardRequest.
         # There's no risk of modifying the input as we've already verified
@@ -594,7 +583,6 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         Args:
             request (google.cloud.monitoring_dashboard_v1.types.UpdateDashboardRequest):
                 The request object. The `UpdateDashboard` request.
-
             retry (google.api_core.retry.Retry): Designation of what errors, if any,
                 should be retried.
             timeout (float): The timeout for this request.
@@ -610,7 +598,6 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         """
         # Create or coerce a protobuf request object.
-
         # Minor optimization to avoid making a copy if the user passes
         # in a dashboards_service.UpdateDashboardRequest.
         # There's no risk of modifying the input as we've already verified
