@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.1.1](https://www.github.com/googleapis/python-monitoring-dashboards/compare/v2.1.0...v2.1.1) (2021-06-22)
+
+
+### Documentation
+
+* omit mention of Python 2.7 in 'CONTRIBUTING.rst' ([#1127](https://www.github.com/googleapis/python-monitoring-dashboards/issues/1127)) ([#75](https://www.github.com/googleapis/python-monitoring-dashboards/issues/75)) ([f267b35](https://www.github.com/googleapis/python-monitoring-dashboards/commit/f267b356fefab3bc79c8d001ae14158a75b95f72)), closes [#1126](https://www.github.com/googleapis/python-monitoring-dashboards/issues/1126)
+
 ## [2.1.0](https://www.github.com/googleapis/python-monitoring-dashboards/compare/v2.0.0...v2.1.0) (2021-05-22)
 
 
