@@ -17,36 +17,23 @@ import proto  # type: ignore
 
 
 __protobuf__ = proto.module(
-    package='google.monitoring.dashboard.v1',
-    manifest={
-        'Text',
-    },
+    package="google.monitoring.dashboard.v1", manifest={"AlertChart",},
 )
 
 
-class Text(proto.Message):
-    r"""A widget that displays textual content.
+class AlertChart(proto.Message):
+    r"""A chart that displays alert policy data.
     Attributes:
-        content (str):
-            The text content to be displayed.
-        format_ (google.monitoring.dashboard_v1.types.Text.Format):
-            How the text content is formatted.
-    """
-    class Format(proto.Enum):
-        r"""The format type of the text content."""
-        FORMAT_UNSPECIFIED = 0
-        MARKDOWN = 1
-        RAW = 2
+        name (str):
+            Required. The resource name of the alert policy. The format
+            is:
 
-    content = proto.Field(
-        proto.STRING,
-        number=1,
-    )
-    format_ = proto.Field(
-        proto.ENUM,
-        number=2,
-        enum=Format,
-    )
+            ::
+
+                projects/[PROJECT_ID_OR_NUMBER]/alertPolicies/[ALERT_POLICY_ID]
+    """
+
+    name = proto.Field(proto.STRING, number=1,)
 
 
 __all__ = tuple(sorted(__protobuf__.manifest))
