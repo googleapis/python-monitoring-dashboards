@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.2.2](https://www.github.com/googleapis/python-monitoring-dashboards/compare/v2.2.1...v2.2.2) (2021-07-20)
+
+
+### Bug Fixes
+
+* **deps:** pin 'google-{api,cloud}-core', 'google-auth' to allow 2.x versions ([#93](https://www.github.com/googleapis/python-monitoring-dashboards/issues/93)) ([eef0a3e](https://www.github.com/googleapis/python-monitoring-dashboards/commit/eef0a3e274d29c1c7aad0799763c935b2ff4feb1))
+
 ### [2.2.1](https://www.github.com/googleapis/python-monitoring-dashboards/compare/v2.2.0...v2.2.1) (2021-07-14)
 
 
