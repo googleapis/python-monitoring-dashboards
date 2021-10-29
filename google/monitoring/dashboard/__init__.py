@@ -95,7 +95,4 @@ import_warning_message = (
     "https://github.com/googleapis/python-monitoring-dashboards/issues."
 )
 
-warnings.warn(
-    import_warning_message,
-    ImportWarning
-)
+warnings.warn(import_warning_message, ImportWarning)
