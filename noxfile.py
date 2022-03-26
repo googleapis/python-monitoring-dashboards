@@ -26,6 +26,9 @@ import nox
 BLACK_VERSION = "black==19.3b0"
 BLACK_PATHS = ["docs", "google", "tests", "noxfile.py", "setup.py"]
 
+# Error if a python version is missing
+nox.options.error_on_missing_interpreters = True
+
 if os.path.exists("samples"):
     BLACK_PATHS.append("samples")
 
