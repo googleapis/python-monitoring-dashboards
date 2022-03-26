@@ -25,7 +25,7 @@ description = "Monitoring Dashboards API client library"
 version = "0.1.0"
 release_status = "Development Status :: 4 - Beta"
 dependencies = [
-    "google-api-core[grpc] >= 1.14.0, < 2.0.0dev",
+    "google-api-core[grpc] >= 1.31.5, <3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.0",
     'enum34; python_version < "3.4"',
 ]
 
