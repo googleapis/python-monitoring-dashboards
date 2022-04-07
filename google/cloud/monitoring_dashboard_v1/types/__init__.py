@@ -13,13 +13,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from .alertchart import AlertChart
+from .alertchart import (
+    AlertChart,
+)
 from .common import (
     Aggregation,
     PickTimeSeriesFilter,
     StatisticalTimeSeriesFilter,
 )
-from .dashboard import Dashboard
+from .dashboard import (
+    Dashboard,
+)
 from .dashboards_service import (
     CreateDashboardRequest,
     DeleteDashboardRequest,
@@ -41,9 +45,15 @@ from .metrics import (
     TimeSeriesQuery,
     SparkChartType,
 )
-from .scorecard import Scorecard
-from .text import Text
-from .widget import Widget
+from .scorecard import (
+    Scorecard,
+)
+from .text import (
+    Text,
+)
+from .widget import (
+    Widget,
+)
 from .xychart import (
     ChartOptions,
     XyChart,
