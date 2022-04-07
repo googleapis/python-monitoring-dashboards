@@ -15,15 +15,17 @@
 #
 import proto  # type: ignore
 
-from google.monitoring.dashboard_v1.types import metrics
-from google.monitoring.dashboard_v1.types import table_display_options as gmd_table_display_options
+from google.cloud.monitoring_dashboard_v1.types import metrics
+from google.cloud.monitoring_dashboard_v1.types import (
+    table_display_options as gmd_table_display_options,
+)
 from google.protobuf import duration_pb2  # type: ignore
 
 
 __protobuf__ = proto.module(
-    package='google.monitoring.dashboard.v1',
+    package="google.monitoring.dashboard.v1",
     manifest={
-        'TimeSeriesTable',
+        "TimeSeriesTable",
     },
 )
 
@@ -32,7 +34,7 @@ class TimeSeriesTable(proto.Message):
     r"""A table that displays time series data.
 
     Attributes:
-        data_sets (Sequence[google.monitoring.dashboard_v1.types.TimeSeriesTable.TableDataSet]):
+        data_sets (Sequence[google.cloud.monitoring_dashboard_v1.types.TimeSeriesTable.TableDataSet]):
             Required. The data displayed in this table.
     """
 
@@ -40,7 +42,7 @@ class TimeSeriesTable(proto.Message):
         r"""Groups a time series query definition with table options.
 
         Attributes:
-            time_series_query (google.monitoring.dashboard_v1.types.TimeSeriesQuery):
+            time_series_query (google.cloud.monitoring_dashboard_v1.types.TimeSeriesQuery):
                 Required. Fields for querying time series
                 data from the Stackdriver metrics API.
             table_template (str):
@@ -57,7 +59,7 @@ class TimeSeriesTable(proto.Message):
                 ``min_alignment_period`` should be at least 10 minutes. It
                 would not make sense to fetch and align data at one minute
                 intervals.
-            table_display_options (google.monitoring.dashboard_v1.types.TableDisplayOptions):
+            table_display_options (google.cloud.monitoring_dashboard_v1.types.TableDisplayOptions):
                 Optional. Table display options for
                 configuring how the table is rendered.
         """

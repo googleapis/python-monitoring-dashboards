@@ -17,9 +17,9 @@ import proto  # type: ignore
 
 
 __protobuf__ = proto.module(
-    package='google.monitoring.dashboard.v1',
+    package="google.monitoring.dashboard.v1",
     manifest={
-        'DashboardFilter',
+        "DashboardFilter",
     },
 )
 
@@ -43,9 +43,10 @@ class DashboardFilter(proto.Message):
             A variable-length string value.
 
             This field is a member of `oneof`_ ``default_value``.
-        filter_type (google.monitoring.dashboard_v1.types.DashboardFilter.FilterType):
+        filter_type (google.cloud.monitoring_dashboard_v1.types.DashboardFilter.FilterType):
             The specified filter type
     """
+
     class FilterType(proto.Enum):
         r"""The type for the dashboard filter"""
         FILTER_TYPE_UNSPECIFIED = 0
@@ -66,7 +67,7 @@ class DashboardFilter(proto.Message):
     string_value = proto.Field(
         proto.STRING,
         number=4,
-        oneof='default_value',
+        oneof="default_value",
     )
     filter_type = proto.Field(
         proto.ENUM,

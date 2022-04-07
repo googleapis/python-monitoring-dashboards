@@ -17,9 +17,9 @@ import proto  # type: ignore
 
 
 __protobuf__ = proto.module(
-    package='google.monitoring.dashboard.v1',
+    package="google.monitoring.dashboard.v1",
     manifest={
-        'LogsPanel',
+        "LogsPanel",
     },
 )
 

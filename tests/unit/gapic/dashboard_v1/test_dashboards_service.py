@@ -40,12 +40,17 @@ from google.cloud.monitoring_dashboard_v1.services.dashboards_service import (
 from google.cloud.monitoring_dashboard_v1.services.dashboards_service import pagers
 from google.cloud.monitoring_dashboard_v1.services.dashboards_service import transports
 from google.cloud.monitoring_dashboard_v1.types import alertchart
+from google.cloud.monitoring_dashboard_v1.types import collapsible_group
 from google.cloud.monitoring_dashboard_v1.types import common
 from google.cloud.monitoring_dashboard_v1.types import dashboard
+from google.cloud.monitoring_dashboard_v1.types import dashboard_filter
 from google.cloud.monitoring_dashboard_v1.types import dashboards_service
 from google.cloud.monitoring_dashboard_v1.types import layouts
+from google.cloud.monitoring_dashboard_v1.types import logs_panel
 from google.cloud.monitoring_dashboard_v1.types import metrics
 from google.cloud.monitoring_dashboard_v1.types import scorecard
+from google.cloud.monitoring_dashboard_v1.types import table
+from google.cloud.monitoring_dashboard_v1.types import table_display_options
 from google.cloud.monitoring_dashboard_v1.types import text
 from google.cloud.monitoring_dashboard_v1.types import widget
 from google.cloud.monitoring_dashboard_v1.types import xychart

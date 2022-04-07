@@ -17,27 +17,25 @@ import proto  # type: ignore
 
 
 __protobuf__ = proto.module(
-    package='google.monitoring.dashboard.v1',
+    package="google.monitoring.dashboard.v1",
     manifest={
-        'AlertChart',
+        "TableDisplayOptions",
     },
 )
 
 
-class AlertChart(proto.Message):
-    r"""A chart that displays alert policy data.
+class TableDisplayOptions(proto.Message):
+    r"""Table display options that can be reused.
 
     Attributes:
-        name (str):
-            Required. The resource name of the alert policy. The format
-            is:
-
-            ::
-
-                projects/[PROJECT_ID_OR_NUMBER]/alertPolicies/[ALERT_POLICY_ID]
+        shown_columns (Sequence[str]):
+            Optional. Columns to display in the table.
+            Leave empty to display all available columns.
+            Note: This field is for future features and is
+            not currently used.
     """
 
-    name = proto.Field(
+    shown_columns = proto.RepeatedField(
         proto.STRING,
         number=1,
     )

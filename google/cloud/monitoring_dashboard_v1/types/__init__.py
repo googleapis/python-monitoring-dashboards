@@ -16,6 +16,9 @@
 from .alertchart import (
     AlertChart,
 )
+from .collapsible_group import (
+    CollapsibleGroup,
+)
 from .common import (
     Aggregation,
     PickTimeSeriesFilter,
@@ -23,6 +26,9 @@ from .common import (
 )
 from .dashboard import (
     Dashboard,
+)
+from .dashboard_filter import (
+    DashboardFilter,
 )
 from .dashboards_service import (
     CreateDashboardRequest,
@@ -38,6 +44,9 @@ from .layouts import (
     MosaicLayout,
     RowLayout,
 )
+from .logs_panel import (
+    LogsPanel,
+)
 from .metrics import (
     Threshold,
     TimeSeriesFilter,
@@ -47,6 +56,12 @@ from .metrics import (
 )
 from .scorecard import (
     Scorecard,
+)
+from .table import (
+    TimeSeriesTable,
+)
+from .table_display_options import (
+    TableDisplayOptions,
 )
 from .text import (
     Text,
@@ -61,10 +76,12 @@ from .xychart import (
 
 __all__ = (
     "AlertChart",
+    "CollapsibleGroup",
     "Aggregation",
     "PickTimeSeriesFilter",
     "StatisticalTimeSeriesFilter",
     "Dashboard",
+    "DashboardFilter",
     "CreateDashboardRequest",
     "DeleteDashboardRequest",
     "GetDashboardRequest",
@@ -75,12 +92,15 @@ __all__ = (
     "GridLayout",
     "MosaicLayout",
     "RowLayout",
+    "LogsPanel",
     "Threshold",
     "TimeSeriesFilter",
     "TimeSeriesFilterRatio",
     "TimeSeriesQuery",
     "SparkChartType",
     "Scorecard",
+    "TimeSeriesTable",
+    "TableDisplayOptions",
     "Text",
     "Widget",
     "ChartOptions",

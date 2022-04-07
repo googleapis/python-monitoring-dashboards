@@ -17,26 +17,26 @@ import proto  # type: ignore
 
 
 __protobuf__ = proto.module(
-    package='google.monitoring.dashboard.v1',
+    package="google.monitoring.dashboard.v1",
     manifest={
-        'TableDisplayOptions',
+        "CollapsibleGroup",
     },
 )
 
 
-class TableDisplayOptions(proto.Message):
-    r"""Table display options that can be reused.
+class CollapsibleGroup(proto.Message):
+    r"""A widget that groups the other widgets. All widgets that are
+    within the area spanned by the grouping widget are considered
+    member widgets.
 
     Attributes:
-        shown_columns (Sequence[str]):
-            Optional. Columns to display in the table.
-            Leave empty to display all available columns.
-            Note: This field is for future features and is
-            not currently used.
+        collapsed (bool):
+            The collapsed state of the widget on first
+            page load.
     """
 
-    shown_columns = proto.RepeatedField(
-        proto.STRING,
+    collapsed = proto.Field(
+        proto.BOOL,
         number=1,
     )
 
