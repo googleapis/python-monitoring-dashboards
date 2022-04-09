@@ -16,7 +16,7 @@
 from collections import OrderedDict
 import os
 import re
-from typing import Dict, Optional, Sequence, Tuple, Type, Union
+from typing import Dict, Mapping, Optional, Sequence, Tuple, Type, Union
 import pkg_resources
 
 from google.api_core import client_options as client_options_lib
@@ -464,7 +464,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         .. code-block:: python
 
-            from google.monitoring import dashboard_v1
+                    from google.monitoring import dashboard_v1
 
             def sample_create_dashboard():
                 # Create a client
@@ -549,7 +549,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         .. code-block:: python
 
-            from google.monitoring import dashboard_v1
+                    from google.monitoring import dashboard_v1
 
             def sample_list_dashboards():
                 # Create a client
@@ -640,7 +640,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         .. code-block:: python
 
-            from google.monitoring import dashboard_v1
+                    from google.monitoring import dashboard_v1
 
             def sample_get_dashboard():
                 # Create a client
@@ -721,7 +721,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         .. code-block:: python
 
-            from google.monitoring import dashboard_v1
+                    from google.monitoring import dashboard_v1
 
             def sample_delete_dashboard():
                 # Create a client
@@ -788,7 +788,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
         .. code-block:: python
 
-            from google.monitoring import dashboard_v1
+                    from google.monitoring import dashboard_v1
 
             def sample_update_dashboard():
                 # Create a client
