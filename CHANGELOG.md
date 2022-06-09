@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/googleapis/python-monitoring-dashboards/compare/v1.0.1...v1.0.2) (2022-06-08)
+
+
+### Bug Fixes
+
+* **deps:** require protobuf<4.0.0 on v1 branch ([#198](https://github.com/googleapis/python-monitoring-dashboards/issues/198)) ([46780b6](https://github.com/googleapis/python-monitoring-dashboards/commit/46780b6b85a0b4494cc7c133186fc8dfd14450ff))
+
 ### [1.0.1](https://github.com/googleapis/python-monitoring-dashboards/compare/v1.0.0...v1.0.1) (2022-04-04)
 
 
