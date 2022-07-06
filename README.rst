@@ -3,7 +3,7 @@ Python Client for Monitoring Dashboards API
 
 |stable| |pypi| |versions|
 
-`Monitoring Dashboards API`_: 
+`Monitoring Dashboards API`_: are one way for you to view and analyze metric data. The Cloud Console provides predefined dashboards that require no setup or configuration. You can also define custom dashboards. With custom dashboards, you have complete control over the charts that are displayed and their configuration.
 
 - `Client Library Documentation`_
 - `Product Documentation`_
