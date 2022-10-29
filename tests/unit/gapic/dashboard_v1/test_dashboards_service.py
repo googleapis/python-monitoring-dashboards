@@ -62,6 +62,7 @@ from google.cloud.monitoring_dashboard_v1.types import widget
 from google.cloud.monitoring_dashboard_v1.types import xychart
 from google.oauth2 import service_account
 from google.protobuf import duration_pb2  # type: ignore
+from google.protobuf import empty_pb2  # type: ignore
 import google.auth
 
 
