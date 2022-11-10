@@ -16,7 +16,18 @@
 from collections import OrderedDict
 import os
 import re
-from typing import Dict, Mapping, Optional, Sequence, Tuple, Type, Union, cast
+from typing import (
+    Dict,
+    Mapping,
+    MutableMapping,
+    MutableSequence,
+    Optional,
+    Sequence,
+    Tuple,
+    Type,
+    Union,
+    cast,
+)
 import pkg_resources
 
 from google.api_core import client_options as client_options_lib
@@ -60,7 +71,7 @@ class DashboardsServiceClientMeta(type):
 
     def get_transport_class(
         cls,
-        label: str = None,
+        label: Optional[str] = None,
     ) -> Type[DashboardsServiceTransport]:
         """Returns an appropriate transport class.
 
@@ -351,7 +362,7 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
         self,
         *,
         credentials: Optional[ga_credentials.Credentials] = None,
-        transport: Union[str, DashboardsServiceTransport, None] = None,
+        transport: Optional[Union[str, DashboardsServiceTransport]] = None,
         client_options: Optional[Union[client_options_lib.ClientOptions, dict]] = None,
         client_info: gapic_v1.client_info.ClientInfo = DEFAULT_CLIENT_INFO,
     ) -> None:
@@ -449,10 +460,12 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
     def create_dashboard(
         self,
-        request: Union[dashboards_service.CreateDashboardRequest, dict] = None,
+        request: Optional[
+            Union[dashboards_service.CreateDashboardRequest, dict]
+        ] = None,
         *,
         retry: OptionalRetry = gapic_v1.method.DEFAULT,
-        timeout: float = None,
+        timeout: Optional[float] = None,
         metadata: Sequence[Tuple[str, str]] = (),
     ) -> dashboard.Dashboard:
         r"""Creates a new custom dashboard. For examples on how you can use
@@ -541,10 +554,10 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
     def list_dashboards(
         self,
-        request: Union[dashboards_service.ListDashboardsRequest, dict] = None,
+        request: Optional[Union[dashboards_service.ListDashboardsRequest, dict]] = None,
         *,
         retry: OptionalRetry = gapic_v1.method.DEFAULT,
-        timeout: float = None,
+        timeout: Optional[float] = None,
         metadata: Sequence[Tuple[str, str]] = (),
     ) -> pagers.ListDashboardsPager:
         r"""Lists the existing dashboards.
@@ -638,10 +651,10 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
     def get_dashboard(
         self,
-        request: Union[dashboards_service.GetDashboardRequest, dict] = None,
+        request: Optional[Union[dashboards_service.GetDashboardRequest, dict]] = None,
         *,
         retry: OptionalRetry = gapic_v1.method.DEFAULT,
-        timeout: float = None,
+        timeout: Optional[float] = None,
         metadata: Sequence[Tuple[str, str]] = (),
     ) -> dashboard.Dashboard:
         r"""Fetches a specific dashboard.
@@ -725,10 +738,12 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
     def delete_dashboard(
         self,
-        request: Union[dashboards_service.DeleteDashboardRequest, dict] = None,
+        request: Optional[
+            Union[dashboards_service.DeleteDashboardRequest, dict]
+        ] = None,
         *,
         retry: OptionalRetry = gapic_v1.method.DEFAULT,
-        timeout: float = None,
+        timeout: Optional[float] = None,
         metadata: Sequence[Tuple[str, str]] = (),
     ) -> None:
         r"""Deletes an existing custom dashboard.
@@ -798,10 +813,12 @@ class DashboardsServiceClient(metaclass=DashboardsServiceClientMeta):
 
     def update_dashboard(
         self,
-        request: Union[dashboards_service.UpdateDashboardRequest, dict] = None,
+        request: Optional[
+            Union[dashboards_service.UpdateDashboardRequest, dict]
+        ] = None,
         *,
         retry: OptionalRetry = gapic_v1.method.DEFAULT,
-        timeout: float = None,
+        timeout: Optional[float] = None,
         metadata: Sequence[Tuple[str, str]] = (),
     ) -> dashboard.Dashboard:
         r"""Replaces an existing custom dashboard with a new definition.
