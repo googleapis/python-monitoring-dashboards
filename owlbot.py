@@ -54,9 +54,3 @@ python.py_samples(skip_readmes=True)
 # run format session for all directories which have a noxfile
 for noxfile in Path(".").glob("**/noxfile.py"):
     s.shell.run(["nox", "-s", "blacken"], cwd=noxfile.parent, hide_output=False)
-
-# # Temporarily disable warnings due to
-# # https://github.com/googleapis/gapic-generator-python/issues/525
-# s.replace("noxfile.py", '[\"\']-W[\"\']', '# "-W"')
-
-
