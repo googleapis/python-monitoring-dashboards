@@ -8,8 +8,8 @@ API Reference
 .. toctree::
     :maxdepth: 2
 
-    monitoring_dashboard_v1/services
-    monitoring_dashboard_v1/types
+    dashboard_v1/services
+    dashboard_v1/types
 
 
 Migration Guide
